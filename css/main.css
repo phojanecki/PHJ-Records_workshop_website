@@ -1,4 +1,112 @@
-p {
-  color: blue;
-  font-size: 25px;
+* {
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+body {
+  background-image: url("../images/dark_wall/dark_wall.png");
+  font-family: "Raleway", sans-serif;
+  color: #828282;
+}
+
+header {
+  height: 10rem;
+  border: 1px solid red;
+}
+
+.grid-container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.grid-container div#logo {
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 8rem;
+  margin: 1rem 0 2rem 1rem;
+}
+
+.grid-container nav#menu {
+  float: right;
+  list-style-type: none;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.grid-container nav#menu li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.grid-container nav#menu li:first-child {
+  background-color: #c92121;
+  border-radius: 2px;
+}
+
+.grid-container nav#menu li:hover {
+  background-color: #c92121;
+  border-radius: 2px;
 }

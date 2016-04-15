@@ -9,5 +9,5 @@ gulp.task('task', function(){
 });
 
 gulp.task('watch', function(){
-  gulp.watch('../scss/main.scss', ['task'])
+ gulp.watch('../scss/**/*.scss', ['task'])
 });
