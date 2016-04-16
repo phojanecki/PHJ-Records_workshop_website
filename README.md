@@ -3,8 +3,8 @@
 This is a website of the fake record label "PHJ Records". It was created for non commercial purposes in order to practice HTML, CSS, Sass, JavaScript and jQuery skills.
 
 Images used within that project were downloaded from:
-* http://www.diyphotography.net/interview-rockconcert-photographer-adam-elmakias/
-* http://iamjanals.blogspot.com/2015/04/because-they-just-get-it-1975.html
+* http://agenciacn.com/variedades/coldplay-es-la-banda-mas-galardonada-del-reino-unido/
+* http://the1975.com/love
 * https://www.youtube.com/watch?v=CiP3jC9CQUk
 
 Artists:

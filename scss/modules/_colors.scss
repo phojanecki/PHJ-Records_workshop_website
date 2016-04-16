@@ -14,6 +14,7 @@ body {
 
 * {
   box-sizing: border-box;
+  // border: $test-border;
 }
 
 // Class for sticky menu
@@ -32,6 +33,7 @@ body {
   // margin: 2rem 0 2rem 0;
   border-bottom: 1px solid white;
 }
+
 // Header
  header {
    width: 100%;
@@ -46,11 +48,11 @@ body {
   margin: 0 auto;
 }
 #main-logo {
-  background-image: url("../images/logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 6rem;
-  margin-top: 1rem;
+  padding-left: 0;
+  img {
+  width: 80%;
+  height: 50%;
+  }
 }
 nav#menu {
   padding: 0;
@@ -88,7 +90,7 @@ nav#menu {
       z-index: 1;
       text-align: center;
       font-size: 3rem;
-      padding-top: 23%;
+      top: 40%;
     }
     p {
       width: 100%;
@@ -96,7 +98,8 @@ nav#menu {
       z-index: 1;
       text-align: center;
       font-size: 2rem;
-      padding-top: 30%;    }
+      top: 55%;
+    }
     img {
       width: 100%;
       height: 30rem;
@@ -125,41 +128,41 @@ nav#menu {
       height: 100%;
     }
     // &:hover {
-    //   }
-    .media-container {
-      h1 {
-        position: absolute;
-        width: 100%;
-        height: 5rem;
-        text-align: center;
-        top: 3rem;
-        z-index: 1;
-        font-size: 3rem;
-        background-color: #c92121;
-        opacity: 0.9;
-        padding-top: 1rem;
-        &:hover {
-          background-color: #9f1a1a;
+      .media-container {
+        h1 {
+          position: absolute;
+          width: 100%;
+          height: 5rem;
+          text-align: center;
+          top: 3rem;
+          z-index: 1;
+          font-size: 3rem;
+          background-color: #c92121;
+          opacity: 0.9;
+          padding-top: 1rem;
+          &:hover {
+            background-color: #9f1a1a;
+          }
+        }
+        p {
+          position: relative;
+          display: block;
+          width: 100%;
+          padding-top: 0;
+          padding-bottom: 0.5rem;
+          margin: 0;
+          top: 10.5rem;
+          z-index: 1;
+          text-align: center;
+          font-size: 1.7rem;
+          background-color: #c92121;
+          opacity: 0.9;
+          &:hover {
+            background-color: #9f1a1a;
+          }
         }
       }
-      p {
-        position: relative;
-        display: block;
-        width: 100%;
-        padding-top: 0;
-        padding-bottom: 0.5rem;
-        margin: 0;
-        top: 10.5rem;
-        z-index: 1;
-        text-align: center;
-        font-size: 1.7rem;
-        background-color: #c92121;
-        opacity: 0.9;
-        &:hover {
-          background-color: #9f1a1a;
-        }
-      }
-    }
+    // }
   }
 }
 
@@ -167,17 +170,30 @@ nav#menu {
 
 footer {
   border-top: 3px solid #c92121;
-  display: block;
-  .footer-contact {
+  div {
+    display: flex;
     height: 13rem;
+    margin: 0 auto;
+  }
+  .footer-contact {
+    display: block;
     padding: 0;
-    border: $test-border;
     text-align: center;
     font-size: 0.9rem;
+    .email {
+      color: #c92121;
+      border-bottom: 1px solid #c92121;
+    }
     img {
-      width: 70%;
+      position: relative;
+      top: 10%;
+      width: 100%;
       height: 45%;
-      margin: 0 auto;
+    }
+    [class^="icon-"] {
+      position: relative;
+      top: 20%;
+      font-size: 2rem;
     }
   }
 }

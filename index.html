@@ -8,6 +8,7 @@
     <title>PHJ Records</title>
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
     <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
+    <link href="icons/css/fontello.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery-2.2.2.js"></script>
     <script src="js/app.js" type="text/javascript"></script>
 </head>
@@ -16,16 +17,16 @@
   <header id="home">
    <div class="grid-container">
     <div class="row">
-      <div id="main-logo" class="col-3"></div>
+      <div id="main-logo" class="col-3"><img src="images/logo.png" /></div>
       <nav id="menu" class="col-6">
         <ul>
-          <li><a id="link1" href="#home">Home</a></li>
-          <li><a id="link2" href="#news">News</a></li>
-          <li><a id="link3" href="#artists">Artists</a></li>
-          <li><a id="link4" href="#releases">Releases</a></li>
-          <li><a id="link5" href="#videos">Videos</a></li>
-          <li><a id="link6" href="#events">Events</a></li>
-          <li><a id="link7" href="#contact">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#artists">Artists</a></li>
+          <li><a href="#releases">Releases</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -42,7 +43,7 @@
             <div class="news-pictures">
               <h1>We won't teach you to fly</h1>
               <p>But we'll record your music</p>
-              <img src="images/news-concert.jpg" />
+              <img src="images/news-concert2.jpg" />
             </div>
             <div class="news-pictures">
               <h1>The 1975</h1>
@@ -78,7 +79,7 @@
             <div class="hover">
               <div class="media-container">
                 <h1><a href="http://www.wizkhalifa.com/" target="_blank">Wiz Khalifa</a></h1>
-                <p><a href="#releases">Music</a></p>
+                <p><a class="music" href="#releases">Music</a></p>
                 <p>Videos</p>
               </div>
             </div>
@@ -87,7 +88,7 @@
           <img src="images/artists/skrillex.jpg" />
             <div class="media-container">
               <h1><a href="http://main.skrillex.com/" target="_blank">Skrillex</a></h1>
-              <p><a href="#releases">Music</a></p>
+              <p><a class="music" href="#releases">Music</a></p>
               <p>Videos</p>
             </div>
         </div>
@@ -95,7 +96,7 @@
           <img src="images/artists/the-1975.jpg" />
             <div class="media-container">
               <h1><a href="http://the1975.com/" target="_blank">The 1975</a></h1>
-              <p><a href="#releases">Music</a></p>
+              <p><a class="music" href="#releases">Music</a></p>
               <p>Videos</p>
             </div>
         </div>
@@ -103,7 +104,7 @@
           <img src="images/artists/years&years.jpg" />
             <div class="media-container">
               <h1><a href="http://yearsandyearsofficial.com/" target="_blank">Years & Years</a></h1>
-              <p><a href="#releases">Music</a></p>
+              <p><a class="music" href="#releases">Music</a></p>
               <p>Videos</p>
             </div>
         </div>
@@ -111,7 +112,7 @@
           <img src="images/artists/coldplay.jpg" />
             <div class="media-container">
               <h1><a href="http://coldplay.com/" target="_blank">Coldplay</a></h1>
-              <p><a href="#releases">Music</a></p>
+              <p><a class="music" href="#releases">Music</a></p>
               <p>Videos</p>
             </div>
         </div>
@@ -119,7 +120,7 @@
           <img src="images/artists/the-weeknd.jpg" />
             <div class="media-container">
               <h1><a href="http://www.theweeknd.com/" target="_blank">The Weeknd</a></h1>
-              <p><a href="#releases">Music</a></p>
+              <p><a class="music" href="#releases">Music</a></p>
               <p>Videos</p>
             </div>
         </div>
@@ -127,7 +128,7 @@
           <img src="images/artists/tyga.jpg" />
             <div class="media-container">
               <h1><a href="http://www.lastkings.co/" target="_blank">Tyga</a></h1>
-              <p><a href="#releases">Music</a></p>
+              <p><a class="music" href="#releases">Music</a></p>
               <p>Videos</p>
             </div>
         </div>
@@ -135,7 +136,7 @@
           <img src="images/artists/major-lazer.jpg" />
             <div class="media-container">
               <h1><a href="http://majorlazer.tumblr.com/" target="_blank">Major Lazer</a></h1>
-              <p><a href="#releases">Music</a></p>
+              <p><a class="music" href="#releases">Music</a></p>
               <p>Videos</p>
             </div>
         </div>
@@ -143,7 +144,7 @@
           <img src="images/artists/kid-ink.jpg" />
             <div class="media-container">
               <h1><a href="http://kidinkmusic.com/home/" target="_blank">Kid Ink</a></h1>
-              <p><a href="#releases">Music</a></p>
+              <p><a class="music" href="#releases">Music</a></p>
               <p>Videos</p>
             </div>
         </div>
@@ -177,11 +178,21 @@
           mob. 123 456 789
           <br />
           <br />
-          pawel.ho.janecki@gmail.com
+          <i class="icon-mail"></i>
+          <a href="mailto:pawel.ho.janecki@gmail.com"><span class="email">pawel.ho.janecki@gmail.com</span></a>
         </p>
       </div>
-      <div class="col-3 footer-contact"><img src="images/logo.png" /></div>
-      <div class="col-3 footer-contact">Sed non nisi quis odio pretium elementum in eu mi. Proin ac pretium felis. Phasellus lacinia ligula a nisi iaculis sagittis. </div>
+      <div class="col-3 footer-contact">
+        <img src="images/logo.png" />
+        <i class="icon-linkedin-squared"></i>
+        <i class="icon-facebook-squared"></i>
+        <i class="icon-gplus-squared"></i>
+        <i class="icon-youtube-squared"></i>
+        <i class="icon-twitter-squared"></i>
+        <i class="icon-spotify"></i>
+      </div>
+      <div class="col-3 footer-contact">
+      </div>
     </div>
   </div>
 </footer>

@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 // Sticky Menu
-/* PROBLEM - when scrolling down, header scrolls immediately under the News heading*/
+/* PROBLEM - when scrolling down, header goes immediately under the News heading*/
 var $header = $('header');
 var $headerPosition = $('header').offset().top;
 
@@ -17,10 +17,20 @@ $(window).on('scroll', function(){
   return false;
 });
 
-//Menu scrolls to...
-/*Requires correction. Navigation header covers every section heading */
+//Menu - smooth scrolling
+/*Requires correction:
+1. Navigation header covers every section heading
+2. Do not return on top when clicking 'home'*/
 
 $('#menu a').on('click', function(event){
+  event.preventDefault();
+  $('body').animate({
+    scrollTop: $($(this).attr("href")).offset().top + "px"
+  }, 1000);
+});
+
+// Smooth scrolling for 'Music' link
+$('.music').on('click', function(event){
   event.preventDefault();
   $('body').animate({
     scrollTop: $($(this).attr("href")).offset().top + "px"
