@@ -17,6 +17,17 @@ $(window).on('scroll', function(){
   return false;
 });
 
+//Menu scrolls to...
+/*Requires update. I do not know how to scroll to a given section
+when clicking on menu link */
+$('#menu a').on('click', function(event){
+  event.preventDefault();
+
+  $('body').animate({
+    scrollTop: $('#').offset().top
+  }, 1000);
+});
+
 
 // News slider
 $("#slideshow > div:gt(0)").hide();
