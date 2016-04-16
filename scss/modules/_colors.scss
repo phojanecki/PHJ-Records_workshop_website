@@ -1,17 +1,29 @@
 body {
   background-image: url("../images/dark_wall/dark_wall.png");
   font-family: "Raleway", sans-serif;
-  color: #ffffff /* tymczasowo do tworzenia strony. Na koncu zmienic*/
+  color: white;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.section-name {
+  width: 25%;
+  font-size: 2rem;
+  margin: 2rem 0 2rem 0;
+  border-bottom: 1px solid white;
+}
 // Header
  header {
    height: 10rem;
+   background-color: black;
+   border-bottom: 3px solid #c92121;
  }
 .grid-container {
   width: 100%;
   height: auto;
-  max-width: 1366px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 div#logo {
@@ -19,7 +31,7 @@ div#logo {
   background-repeat: no-repeat;
   background-size: contain;
   height: 8rem;
-  margin: 1rem 0 2rem 1rem;
+  margin: 1rem 0 0.5rem 1rem;
 }
 nav#menu {
   float:right;
@@ -30,7 +42,7 @@ nav#menu {
   li {
     display: inline-block;
     padding: 10px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     &:first-child{
       background-color: #c92121;
       border-radius: 2px;
@@ -42,21 +54,18 @@ nav#menu {
   }
 }
 
-// News slider
-#news{
-  background-color: #000000;
-}
+// Section News
 #slideshow {
   margin: 0 auto;
   position: relative;
   width: 90%;
   height: 30rem;
-  div {
+  .news-pictures {
     position: absolute;
     h1 {
       width: 100%;
       position: absolute;
-      z-index: 100;
+      z-index: 1;
       text-align: center;
       font-size: 3rem;
       padding-top: 23%;
@@ -64,13 +73,53 @@ nav#menu {
     p {
       width: 100%;
       position: absolute;
-      z-index: 100;
+      z-index: 1;
       text-align: center;
       font-size: 2rem;
       padding-top: 30%;    }
     img {
       width: 100%;
       height: 30rem;
+    }
+  }
+}
+
+// Section Artists
+
+.artist {
+  position: relative;
+  height: 20rem;
+  float: left;
+  padding: 0;
+  border: 1px solid black;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover {
+    h1 {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 3rem;
+      z-index: 1;
+      font-size: 3rem;
+      background-color: #c92121;
+      opacity: 0.9;
+      padding-top: 1rem;
+    }
+    .media-container {
+      position: absolute;
+      width: 100%;
+      top: 5rem;
+      z-index: 1;
+      font-size: 1.7rem;
+      background-color: #c92121;
+    }
+    p {
+      width: 50%;
+      margin: 1rem auto;
     }
   }
 }
