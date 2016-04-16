@@ -18,13 +18,12 @@ $(window).on('scroll', function(){
 });
 
 //Menu scrolls to...
-/*Requires update. I do not know how to scroll to a given section
-when clicking on menu link */
+/*Requires correction. Navigation header covers every section heading */
+
 $('#menu a').on('click', function(event){
   event.preventDefault();
-
   $('body').animate({
-    scrollTop: $('#').offset().top
+    scrollTop: $($(this).attr("href")).offset().top + "px"
   }, 1000);
 });
 
