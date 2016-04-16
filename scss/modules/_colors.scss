@@ -2,20 +2,39 @@ body {
   background-image: url("../images/dark_wall/dark_wall.png");
   font-family: "Raleway", sans-serif;
   color: white;
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
 }
 
 * {
   box-sizing: border-box;
 }
 
+// Class for sticky menu
+.sticky {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  /*Chrome cannot render position:fixed on elements under a transformation.*/
+}
+
 .section-name {
   width: 25%;
   font-size: 2rem;
-  margin: 2rem 0 2rem 0;
+  // margin: 2rem 0 2rem 0;
   border-bottom: 1px solid white;
 }
 // Header
  header {
+   width: 100%;
    height: 10rem;
    background-color: black;
    border-bottom: 3px solid #c92121;
