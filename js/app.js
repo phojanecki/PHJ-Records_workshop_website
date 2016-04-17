@@ -39,7 +39,6 @@ $('.music').on('click', function(event){
 
 // News slider
 $("#slideshow > div:gt(0)").hide();
-
 setInterval(function() {
   $('#slideshow > div:first')
     .fadeOut(2000)
@@ -48,5 +47,13 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow');
 },  4000);
+
+// Purchase confirmation - notification on-screen
+$('.buy').on('click', function() {
+  $('body').fadeTo(1500, 0.6).delay(3000);
+  $('#purchase-confirmation').fadeIn(1500).delay(3000);
+  $('#purchase-confirmation').fadeOut(1500);
+  $('body').fadeTo(1500, 1);
+});
 
 });
