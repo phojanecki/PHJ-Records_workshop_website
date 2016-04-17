@@ -114,6 +114,10 @@ table {
   width: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("../images/binding_dark/binding_dark.png");
   font-family: "Raleway", sans-serif;
@@ -130,8 +134,15 @@ body a:visited {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+body .section-name {
+  width: 25%;
+  font-size: 2rem;
+  border-bottom: 1px solid white;
+}
+
+body .content {
+  width: 50%;
+  text-align: justify;
 }
 
 .sticky {
@@ -143,15 +154,9 @@ body a:visited {
   /*Chrome cannot render position:fixed on elements under a transformation.*/
 }
 
-.section-name {
-  width: 25%;
-  font-size: 2rem;
-  border-bottom: 1px solid white;
-}
-
 header {
   width: 100%;
-  height: 8rem;
+  height: 7rem;
   background-color: black;
   border-bottom: 3px solid #c92121;
 }
@@ -164,7 +169,7 @@ header {
 }
 
 #main-logo {
-  padding-left: 0;
+  padding: 0.25rem 0 0 0;
 }
 
 #main-logo img {
@@ -173,12 +178,12 @@ header {
 }
 
 nav#menu {
-  padding: 0;
+  display: flex;
+  justify-content: flex-end;
   float: right;
   list-style-type: none;
   margin-top: 4rem;
-  display: flex;
-  justify-content: flex-end;
+  padding: 0;
 }
 
 nav#menu li {
@@ -231,11 +236,6 @@ nav#menu li:hover {
   height: 30rem;
 }
 
-#artists .content {
-  width: 50%;
-  text-align: justify;
-}
-
 #artists .artist {
   position: relative;
   height: 20rem;
@@ -257,14 +257,14 @@ nav#menu li:hover {
 #artists .artist .media-container h1 {
   position: absolute;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   text-align: center;
-  top: 3rem;
+  top: 4rem;
   z-index: 1;
   font-size: 3rem;
   background-color: #c92121;
   opacity: 0.9;
-  padding-top: 1rem;
+  padding-top: 0.6rem;
 }
 
 #artists .artist .media-container h1:hover {
@@ -273,7 +273,6 @@ nav#menu li:hover {
 
 #artists .artist .media-container p {
   position: relative;
-  display: block;
   width: 100%;
   padding-top: 0;
   padding-bottom: 0.5rem;
@@ -281,13 +280,83 @@ nav#menu li:hover {
   top: 10.5rem;
   z-index: 1;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   background-color: #c92121;
   opacity: 0.9;
 }
 
 #artists .artist .media-container p:hover {
   background-color: #9f1a1a;
+}
+
+.release {
+  position: relative;
+  height: 27rem;
+  float: left;
+  padding: 0;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.release .album-container {
+  width: 80%;
+  height: 73%;
+  margin: 0.5rem auto -0.5rem  auto;
+  padding-bottom: 0;
+}
+
+.release .album-container img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.release .album-container .more-info {
+  visibility: hidden;
+}
+
+.release .album-container:hover .more-info {
+  position: absolute;
+  visibility: visible;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  top: 15rem;
+  left: 3.1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #c92121;
+  opacity: 0.9;
+}
+
+.release .album-container:hover .more-info:hover {
+  background-color: #9f1a1a;
+}
+
+.release h6 {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 0.5rem;
+  background-color: #c92121;
+}
+
+.release p {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.3rem 0;
+  font-size: 1.2rem;
+  background-color: #c92121;
+}
+
+.release .icon-spotify {
+  color: #4db965;
+}
+
+.release .icon-youtube {
+  color: #e02d28;
 }
 
 footer {

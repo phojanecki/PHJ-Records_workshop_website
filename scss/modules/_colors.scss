@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  // border: $test-border;
+}
+
 body {
   background-image: url("../images/binding_dark/binding_dark.png");
   font-family: "Raleway", sans-serif;
@@ -10,11 +15,16 @@ body {
     color: white;
     text-decoration: none;
   }
-}
-
-* {
-  box-sizing: border-box;
-  // border: $test-border;
+  .section-name {
+    width: 25%;
+    font-size: 2rem;
+    // margin: 2rem 0 2rem 0;
+    border-bottom: 1px solid white;
+  }
+  .content {
+    width: 50%;
+    text-align: justify;
+  }
 }
 
 // Class for sticky menu
@@ -27,17 +37,10 @@ body {
   /*Chrome cannot render position:fixed on elements under a transformation.*/
 }
 
-.section-name {
-  width: 25%;
-  font-size: 2rem;
-  // margin: 2rem 0 2rem 0;
-  border-bottom: 1px solid white;
-}
-
 // Header
  header {
    width: 100%;
-   height: 8rem;
+   height: 7rem;
    background-color: black;
    border-bottom: 3px solid #c92121;
  }
@@ -47,20 +50,21 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+//Logo isn't aligned to the middle when resizing the window
 #main-logo {
-  padding-left: 0;
+  padding: 0.25rem 0 0 0;
   img {
   width: 80%;
   height: 50%;
   }
 }
 nav#menu {
-  padding: 0;
+  display: flex;
+  justify-content: flex-end;
   float:right;
   list-style-type: none;
   margin-top: 4rem;
-  display: flex;
-  justify-content: flex-end;
+  padding: 0;
   li {
     display: inline-block;
     padding: 10px;
@@ -109,10 +113,6 @@ nav#menu {
 
 // Section Artists
 #artists{
-  .content {
-    width: 50%;
-    text-align: justify;
-  }
   .artist {
     position: relative;
     height: 20rem;
@@ -132,21 +132,20 @@ nav#menu {
         h1 {
           position: absolute;
           width: 100%;
-          height: 5rem;
+          height: 4rem;
           text-align: center;
-          top: 3rem;
+          top: 4rem;
           z-index: 1;
           font-size: 3rem;
           background-color: #c92121;
           opacity: 0.9;
-          padding-top: 1rem;
+          padding-top: 0.6rem;
           &:hover {
             background-color: #9f1a1a;
           }
         }
         p {
           position: relative;
-          display: block;
           width: 100%;
           padding-top: 0;
           padding-bottom: 0.5rem;
@@ -154,7 +153,7 @@ nav#menu {
           top: 10.5rem;
           z-index: 1;
           text-align: center;
-          font-size: 1.7rem;
+          font-size: 1.5rem;
           background-color: #c92121;
           opacity: 0.9;
           &:hover {
@@ -166,8 +165,73 @@ nav#menu {
   }
 }
 
-//Footer
+//Section Releases
+.release {
+  position: relative;
+  height: 27rem;
+  float: left;
+  padding: 0;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  text-align: center;
+  .album-container {
+    width: 80%;
+    height: 73%;
+    margin: 0.5rem auto -0.5rem  auto;
+    padding-bottom: 0;
+    img {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+    }
+    .more-info {
+      visibility: hidden;
+    }
+    &:hover {
+      .more-info {
+        position: absolute;
+        visibility: visible;
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        top: 15rem;
+        left: 3.1rem;
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: #c92121;
+        opacity: 0.9;
+        &:hover {
+          background-color:#9f1a1a;
+        }
+      }
+    }
+  }
 
+  h6 {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+    background-color: #c92121;
+  }
+  p {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.3rem 0;
+    font-size: 1.2rem;
+    background-color: #c92121;
+  }
+
+  .icon-spotify {
+    color: #4db965;
+  }
+  .icon-youtube {
+    color: #e02d28;
+  }
+}
+
+//Footer
 footer {
   border-top: 3px solid #c92121;
   div {

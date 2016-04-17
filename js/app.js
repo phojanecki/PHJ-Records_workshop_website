@@ -37,7 +37,6 @@ $('.music').on('click', function(event){
   }, 1000);
 });
 
-
 // News slider
 $("#slideshow > div:gt(0)").hide();
 
@@ -49,6 +48,5 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow');
 },  4000);
-
 
 });

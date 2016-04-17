@@ -11,11 +11,14 @@ Artists:
 * http://mad-music.pl/wp-content/uploads/2015/02/G-Wiz.jpg
 * http://uwmpost.com/fringe/concert-preview-the-1975-at-the-rave
 * http://www.koncertomania.pl/newsy/87433-Years-Years-blyszczy.html
-* https://www.youtube.com/user/TheOfficialSkrillex
-* https://vimeo.com/coldplayyalpdloc
+* http://runthetrap.com/2015/05/17/relive-jack-us-set-from-hangout-fest/
+* http://www.theguardian.com/music/2015/dec/04/coldplay-a-head-full-of-dreams-review-a-failure-to-commit-to-pop
 * http://popheart.pl/wp-content/uploads/2015/12/The-Weeknd-at-the-Juno-Aw-009.jpg
 * http://www.ew.com/topic/tyga
-* http://sahiphopmag.co.za/2015/07/new-release-kid-ink-faster-video/
+* http://www.hitsync.net/tag/kid-ink/
 * http://runthetrap.com/2016/03/11/with-you-ghost-feat-vince-staples-major-lazer-remix-on-beats-1-lazer-sound/
+
+Album covers:
+* http://www.albumartexchange.com/
 
 All rights are reserved to the respective owners.

@@ -9,43 +9,49 @@
     {
       "uid": "1145676a91138011729fa2909997af66",
       "css": "linkedin-squared",
-      "code": 59394,
+      "code": 59392,
       "src": "fontawesome"
     },
     {
       "uid": "bf882b30900da12fca090d9796bc3030",
       "css": "mail",
-      "code": 59401,
+      "code": 59393,
       "src": "fontawesome"
     },
     {
       "uid": "4743b088aa95d6f3b6b990e770d3b647",
       "css": "facebook-squared",
-      "code": 59395,
+      "code": 59394,
       "src": "fontawesome"
     },
     {
       "uid": "906348dc798a0d42715cc97c875e3ac6",
       "css": "twitter-squared",
-      "code": 59402,
+      "code": 59395,
       "src": "fontawesome"
     },
     {
       "uid": "f0cf7db1b03cb65adc450aa3bdaf8c4d",
       "css": "gplus-squared",
-      "code": 59392,
+      "code": 59396,
       "src": "fontawesome"
     },
     {
       "uid": "e331ff486a299c6bdf0056426c8fac53",
       "css": "youtube-squared",
-      "code": 59393,
+      "code": 59397,
       "src": "fontawesome"
     },
     {
       "uid": "fb4794d89b77ab712ad56c0dc4c76c6b",
       "css": "spotify",
-      "code": 59396,
+      "code": 59398,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a9862b9d5197886c1ad693ecd7120b31",
+      "css": "youtube",
+      "code": 59399,
       "src": "fontawesome"
     }
   ]
