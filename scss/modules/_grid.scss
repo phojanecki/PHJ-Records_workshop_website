@@ -1,10 +1,13 @@
+@import "variables";
+
 * {
     box-sizing: border-box;
+    // border: $test-border;
 }
 [class*="col-"] {
     float: left;
     padding: 15px;
-    // border: 1px solid red;
+    // border: $test-border;
 }
 .row:after {
     content: "";
