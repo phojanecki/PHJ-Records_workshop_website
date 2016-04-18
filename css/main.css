@@ -404,6 +404,10 @@ footer .footer-contact .icon-mail {
   border-radius: 5px;
 }
 
+#albums .section-name {
+  width: 60%;
+}
+
 #albums .album {
   width: 25%;
   margin: 0;
