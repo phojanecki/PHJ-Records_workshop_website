@@ -13,7 +13,6 @@ body {
   .section-name {
     width: 25%;
     font-size: 2rem;
-    // margin: 2rem 0 2rem 0;
     border-bottom: 1px solid white;
   }
   .content {
@@ -28,9 +27,10 @@ body {
   z-index: 999;
   left: 0;
   top: 0;
+  right: 0;
   -webkit-transform: translate3d(0, 0, 0);
   /*Chrome cannot render position:fixed on elements under a transformation.*/
-}
+  }
 
 // Header
  header {
@@ -45,7 +45,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-//Logo isn't aligned to the middle when resizing the window
+/* Logo isn't aligned to the middle when resizing the window */
 #main-logo {
   padding: 0.25rem 0 0 0;
   img {
@@ -74,40 +74,61 @@ nav#menu {
     }
   }
 }
+/* Spacer is necessary to have 'Section News' visible.
+Otherwise it will hide behind the header.*/
+#spacer {
+  width: 100%;
+  height: 5.5rem;
+}
 
 // Section News
-#slideshow {
-  margin: 0 auto;
-  position: relative;
-  width: 90%;
-  height: 30rem;
-  .news-pictures {
-    position: absolute;
-    h1 {
-      width: 100%;
+#news {
+  &:before {
+    content:"";
+    display:block;
+    height:5.5rem; /* fixed header height*/
+    margin:-5.5rem 0 0; /* negative fixed header height */
+  }
+  #slideshow {
+    position: relative;
+    width: 90%;
+    height: 30rem;
+    margin: 0 auto;
+    .news-pictures {
       position: absolute;
-      z-index: 1;
-      text-align: center;
-      font-size: 3rem;
-      top: 40%;
-    }
-    p {
-      width: 100%;
-      position: absolute;
-      z-index: 1;
-      text-align: center;
-      font-size: 2rem;
-      top: 55%;
-    }
-    img {
-      width: 100%;
-      height: 30rem;
+      h1 {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        font-size: 3rem;
+        top: 40%;
+      }
+      p {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        font-size: 2rem;
+        top: 55%;
+      }
+      img {
+        width: 100%;
+        height: 30rem;
+      }
     }
   }
 }
 
+
 // Section Artists
 #artists{
+  &:before {
+    content:"";
+    display:block;
+    height:5.5rem; /* fixed header height*/
+    margin:-5.5rem 0 0; /* negative fixed header height */
+  }
   .artist {
     position: relative;
     height: 20rem;
@@ -161,62 +182,69 @@ nav#menu {
 }
 
 //Section Releases
-.release {
-  position: relative;
-  height: 25rem;
-  float: left;
-  padding: 0;
-  margin-top: 2rem;
-  font-size: 2.5rem;
-  text-align: center;
-  .album-container {
-    width: 80%;
-    height: 73%;
-    margin: 0.5rem auto -0.5rem  auto;
-    padding-bottom: 0;
-    img {
-      position: relative;
-      display: block;
-      margin: 0 auto;
-    }
-    .more-info {
-      visibility: hidden;
-    }
-    &:hover {
-      .more-info {
-        position: absolute;
-        visibility: visible;
-        width: 75%;
+#releases {
+  &:before {
+    content:"";
+    display:block;
+    height:5.5rem; /* fixed header height*/
+    margin:-5.5rem 0 0; /* negative fixed header height */
+  }
+  .release {
+    position: relative;
+    height: 25rem;
+    float: left;
+    padding: 0;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    .album-container {
+      width: 80%;
+      height: 73%;
+      margin: 0.5rem auto -0.5rem  auto;
+      padding-bottom: 0;
+      img {
+        position: relative;
+        display: block;
         margin: 0 auto;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        top: 12rem;
-        left: 3.1rem;
-        text-align: center;
-        font-size: 1.5rem;
-        background-color: #c92121;
-        opacity: 0.9;
-        &:hover {
-          background-color:#9f1a1a;
+      }
+      .more-info {
+        visibility: hidden;
+      }
+      &:hover {
+        .more-info {
+          position: absolute;
+          visibility: visible;
+          width: 75%;
+          margin: 0 auto;
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          top: 12rem;
+          left: 3.1rem;
+          text-align: center;
+          font-size: 1.5rem;
+          background-color: #c92121;
+          opacity: 0.9;
+          &:hover {
+            background-color:#9f1a1a;
+          }
         }
       }
     }
-  }
-
-  h6 {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    background-color: #c92121;
-  }
-  p {
-    position: relative;
-    width: 90%;
-    margin: 0 auto;
-    padding: 0.3rem 0;
-    font-size: 1.2rem;
-    background-color: #c92121;
+    h6 {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      background-color: #c92121;
+    }
+    p {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      padding: 0.3rem 0;
+      font-size: 1.2rem;
+      background-color: #c92121;
+    }
   }
 }
 

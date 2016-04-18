@@ -6,6 +6,9 @@ Images used within that project were downloaded from:
 * http://agenciacn.com/variedades/coldplay-es-la-banda-mas-galardonada-del-reino-unido/
 * http://the1975.com/love
 * https://www.youtube.com/watch?v=CiP3jC9CQUk
+* http://wallpapers-best.com/1586-die-antwoord.html
+* http://www.allwallpaper.in/de/music-concert-wallpaper-8754.html
+* http://hersplendidplumage.com/
 
 Artists:
 * http://mad-music.pl/wp-content/uploads/2015/02/G-Wiz.jpg

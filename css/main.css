@@ -142,6 +142,7 @@ body .content {
   z-index: 999;
   left: 0;
   top: 0;
+  right: 0;
   -webkit-transform: translate3d(0, 0, 0);
   /*Chrome cannot render position:fixed on elements under a transformation.*/
 }
@@ -160,6 +161,7 @@ header {
   margin: 0 auto;
 }
 
+/* Logo isn't aligned to the middle when resizing the window */
 #main-logo {
   padding: 0.25rem 0 0 0;
 }
@@ -194,18 +196,34 @@ nav#menu li:hover {
   border-radius: 2px;
 }
 
-#slideshow {
-  margin: 0 auto;
+/* Spacer is necessary to have 'Section News' visible.
+Otherwise it will hide behind the header.*/
+#spacer {
+  width: 100%;
+  height: 5.5rem;
+}
+
+#news:before {
+  content: "";
+  display: block;
+  height: 5.5rem;
+  /* fixed header height*/
+  margin: -5.5rem 0 0;
+  /* negative fixed header height */
+}
+
+#news #slideshow {
   position: relative;
   width: 90%;
   height: 30rem;
+  margin: 0 auto;
 }
 
-#slideshow .news-pictures {
+#news #slideshow .news-pictures {
   position: absolute;
 }
 
-#slideshow .news-pictures h1 {
+#news #slideshow .news-pictures h1 {
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -214,7 +232,7 @@ nav#menu li:hover {
   top: 40%;
 }
 
-#slideshow .news-pictures p {
+#news #slideshow .news-pictures p {
   width: 100%;
   position: absolute;
   z-index: 1;
@@ -223,9 +241,18 @@ nav#menu li:hover {
   top: 55%;
 }
 
-#slideshow .news-pictures img {
+#news #slideshow .news-pictures img {
   width: 100%;
   height: 30rem;
+}
+
+#artists:before {
+  content: "";
+  display: block;
+  height: 5.5rem;
+  /* fixed header height*/
+  margin: -5.5rem 0 0;
+  /* negative fixed header height */
 }
 
 #artists .artist {
@@ -281,7 +308,16 @@ nav#menu li:hover {
   background-color: #9f1a1a;
 }
 
-.release {
+#releases:before {
+  content: "";
+  display: block;
+  height: 5.5rem;
+  /* fixed header height*/
+  margin: -5.5rem 0 0;
+  /* negative fixed header height */
+}
+
+#releases .release {
   position: relative;
   height: 25rem;
   float: left;
@@ -291,24 +327,24 @@ nav#menu li:hover {
   text-align: center;
 }
 
-.release .album-container {
+#releases .release .album-container {
   width: 80%;
   height: 73%;
   margin: 0.5rem auto -0.5rem  auto;
   padding-bottom: 0;
 }
 
-.release .album-container img {
+#releases .release .album-container img {
   position: relative;
   display: block;
   margin: 0 auto;
 }
 
-.release .album-container .more-info {
+#releases .release .album-container .more-info {
   visibility: hidden;
 }
 
-.release .album-container:hover .more-info {
+#releases .release .album-container:hover .more-info {
   position: absolute;
   visibility: visible;
   width: 75%;
@@ -323,11 +359,11 @@ nav#menu li:hover {
   opacity: 0.9;
 }
 
-.release .album-container:hover .more-info:hover {
+#releases .release .album-container:hover .more-info:hover {
   background-color: #9f1a1a;
 }
 
-.release h6 {
+#releases .release h6 {
   width: 90%;
   margin: 0 auto;
   padding-top: 0.5rem;
@@ -335,7 +371,7 @@ nav#menu li:hover {
   background-color: #c92121;
 }
 
-.release p {
+#releases .release p {
   position: relative;
   width: 90%;
   margin: 0 auto;
