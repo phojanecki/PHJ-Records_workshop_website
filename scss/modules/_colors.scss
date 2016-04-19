@@ -38,6 +38,49 @@ body {
    height: 5.5rem;
    background-color: black;
    border-bottom: 3px solid #c92121;
+   .cart {
+     position: absolute;
+     top: 0.5rem;
+     right: 0.5rem;
+     width: 11rem;
+     height: 4.5rem;
+     background-color: #c92121;
+     border-radius: 5px;
+     text-align: center;
+     td {
+       padding: 0.3rem;
+     }
+     p {
+       margin: 0;
+       word-spacing: 5px;
+       font-size: 0.9rem;
+       .simpleCart_quantity, .simpleCart_total {
+         font-weight: bold;
+       }
+     }
+     .items {
+       border-bottom: 1px solid white;
+     }
+     a {
+       font-size: 0.8rem;
+     }
+     .simpleCart_empty{
+       width: 5rem;
+       height: 2rem;
+       padding: 2.5px 0.9rem 2.5px 0.9rem;
+       border: 1px solid black;
+       border-radius: 5px;
+       background-color: #9f1a1a;
+     }
+     .simpleCart_checkout {
+       width: 5rem;
+       height: 2rem;
+       padding: 3px;
+       border: 1px solid black;
+       border-radius: 5px;
+       background-color: #208a00;
+     }
+   }
  }
 .grid-container {
   width: 100%;

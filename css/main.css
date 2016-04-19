@@ -154,6 +154,57 @@ header {
   border-bottom: 3px solid #c92121;
 }
 
+header .cart {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 11rem;
+  height: 4.5rem;
+  background-color: #c92121;
+  border-radius: 5px;
+  text-align: center;
+}
+
+header .cart td {
+  padding: 0.3rem;
+}
+
+header .cart p {
+  margin: 0;
+  word-spacing: 5px;
+  font-size: 0.9rem;
+}
+
+header .cart p .simpleCart_quantity, header .cart p .simpleCart_total {
+  font-weight: bold;
+}
+
+header .cart .items {
+  border-bottom: 1px solid white;
+}
+
+header .cart a {
+  font-size: 0.8rem;
+}
+
+header .cart .simpleCart_empty {
+  width: 5rem;
+  height: 2rem;
+  padding: 2.5px 0.9rem 2.5px 0.9rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #9f1a1a;
+}
+
+header .cart .simpleCart_checkout {
+  width: 5rem;
+  height: 2rem;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #208a00;
+}
+
 .grid-container {
   width: 100%;
   height: auto;
@@ -260,11 +311,6 @@ Otherwise it will hide behind the header.*/
   height: 20rem;
   float: left;
   padding: 0;
-}
-
-#artists .artist p {
-  width: 50%;
-  margin: 1rem auto;
 }
 
 #artists .artist img {
@@ -380,6 +426,41 @@ Otherwise it will hide behind the header.*/
   background-color: #c92121;
 }
 
+#videos:before {
+  content: "";
+  display: block;
+  height: 5.5rem;
+  /* fixed header height*/
+  margin: -5.5rem 0 0;
+  /* negative fixed header height */
+}
+
+#videos .gifs {
+  height: 15rem;
+  padding: 0;
+}
+
+#videos .gifs img {
+  width: 100%;
+  height: 100%;
+}
+
+#videos .see-all {
+  display: flex;
+  justify-content: center;
+}
+
+#videos .see-all a {
+  margin: 0 1rem 0 1rem;
+  width: 15rem;
+  height: 3rem;
+  background-color: #c92121;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 1rem;
+}
+
 footer {
   width: 100%;
   background-color: black;
@@ -451,6 +532,10 @@ footer .footer-contact .icon-mail {
   border-bottom: 1px solid white;
 }
 
+#albums .album .item_price {
+  font-weight: bold;
+}
+
 #albums .album p {
   text-align: center;
 }
@@ -466,17 +551,17 @@ footer .footer-contact .icon-mail {
   text-align: center;
 }
 
-#albums .album .buy {
+#albums .album .item_add {
   display: inline-block;
   margin-bottom: 1rem;
   margin-left: 3.5rem;
   padding: 0.5rem;
   background-color: #c92121;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 5px;
 }
 
-#albums .album .buy:hover {
+#albums .album .item_add:hover {
   background-color: #9f1a1a;
 }
 
@@ -488,6 +573,10 @@ footer .footer-contact .icon-mail {
 
 #albums .track-list ol {
   margin-left: 6rem;
+}
+
+#videos .heading {
+  padding: 0;
 }
 
 #videos .artist-tag {

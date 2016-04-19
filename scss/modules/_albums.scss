@@ -22,6 +22,9 @@
     margin: 0;
     padding: 0;
     border-bottom: 1px solid white;
+    .item_price {
+      font-weight: bold;
+    }
     p {
       text-align: center;
     }
@@ -34,13 +37,13 @@
       color: #e02d28;
       text-align: center;
     }
-    .buy {
+    .item_add {
       display: inline-block;
       margin-bottom: 1rem;
       margin-left: 3.5rem;
       padding: 0.5rem;
       background-color: #c92121;
-      font-size: 2rem;
+      font-size: 1.5rem;
       border-radius: 5px;
       &:hover {
         background-color:#9f1a1a;
@@ -54,5 +57,12 @@
     ol {
       margin-left: 6rem;
     }
+  }
+}
+
+// Section Videos
+#videos {
+  .heading {
+    padding: 0;
   }
 }

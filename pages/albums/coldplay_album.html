@@ -8,12 +8,39 @@
     <title>Coldplay - A Head Full Of Dreams</title>
     <link href="../../css/main.css" rel="stylesheet" type="text/css"/>
     <link href="../../icons/css/fontello.css" rel="stylesheet" type="text/css" />
-    <script src="../../js/jquery-2.2.2.js"></script>
-    <!-- <script src="../../js/app.js" type="text/javascript"></script> -->
+    <script src="../../js/jquery-2.2.3.min.js"></script>
+    <script src="../../js/simpleCart.min.js"></script>
+    <script src="../../js/app.js" type="text/javascript"></script>
 </head>
 
 <body>
-  <header id="home">
+  <header id="home" class="sticky">
+      <table class="cart">
+        <tr>
+          <td>
+            <p class="items">Items:</p>
+          </td>
+          <td>
+            <p class="items">Total:</p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p><span class="simpleCart_quantity"></span></p>
+          </td>
+          <td>
+            <p><span class="simpleCart_total"></span></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="javascript:;" class="simpleCart_empty">Empty</a>
+          </td>
+          <td>
+            <a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+          </td>
+        </tr>
+      </table>
    <div class="grid-container">
       <div id="main-logo" class="col-3"><a href="../../index.html"><img src="../../images/logo.png" alt="PHJ Records logo" /></a></div>
       <nav id="menu" class="col-9">
@@ -30,19 +57,24 @@
   </div>
   </header>
 
+  <!-- Spacer is necessary to have 'Section News' visible.
+  Otherwise it will hide behind the header. -->
+  <div id="spacer"></div>
+
 <!-- Section Albums -->
-<section id="albums">
+<section id="albums" class="simpleCart_shelfItem">
   <div class="grid-container">
-    <p class="section-name">Coldplay - A Head Full Of Dreams</p>
+    <p class="section-name item_name">Coldplay - A Head Full Of Dreams</p>
     <div class="row">
       <div class="col-4 album">
         <img src="../../images/releases/a-head-full-of-dreams_album.jpg" alt="A Head Full Of Dreams album cover" />
+        <p class="item_price">Price: $6.99</p>
         <p>Released: 4 December 2015</p>
         <p>Length: 45:45</p>
         <p>Genre: Pop</p>
         <a href="https://open.spotify.com/album/3cfAM8b8KqJRoIzt3zLKqw" target="_blank"><i class="icon-spotify"></i></a>
         <a href="https://www.youtube.com/user/ColdplayVEVO" target="_blank"><i class="icon-youtube"></i></a>
-        <div class="buy">Buy now</div>
+        <a class="item_add" href="javascript:;">Add to cart</a>
         <div id="purchase-confirmation">Thank you for purchase!</div>
       </div>
       <div class="col-8 track-list">
@@ -60,13 +92,34 @@
           <li>"Up &amp; Up"</li>
         </ol>
       </div>
-    </div>
-    <div class="row">
       <div class="col-12 album-description">
         Mauris lectus nibh, pulvinar et hendrerit sit amet, lacinia sed sem. Fusce sit amet felis sit amet justo hendrerit rutrum egestas in ligula. Maecenas facilisis aliquam tempor. Donec eget malesuada ligula. Ut porttitor fringilla pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id sem diam. Aliquam ultrices diam at bibendum tincidunt. Maecenas scelerisque, leo sit amet facilisis mollis, enim mauris lacinia est, sed malesuada purus nibh quis tellus. Nunc vel arcu enim.
       </div>
+</section>
+
+<!-- Section Videos -->
+  <section id="videos">
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-12 heading">
+          <p class="section-name">Video</p>
+        </div>
+        <div class="col-4 gifs">
+          <img src="../../videos/coldplay/coldplay_1.gif"/>
+        </div>
+        <div class="col-4 gifs">
+          <img src="../../videos/coldplay/coldplay_2.gif"/>
+        </div>
+        <div class="col-4 gifs">
+          <img src="../../videos/coldplay/coldplay_3.gif"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 see-all">
+          <a href="../../pages/videos.html"><div>See all</div></a>
+        </div>
+      </div>
     </div>
-  </div>
   </section>
 
   <!-- Section Releases -->
