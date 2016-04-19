@@ -12,7 +12,7 @@ $(document).ready(function(){
   },  4000);
 
 // Sticky menu scrolls to anchor
-$('#menu a').on('click', function(event){
+$('#menu .inner-link').on('click', function(event){
   event.preventDefault();
   $('body').animate({
     scrollTop: $($(this).attr("href")).offset().top + "px",
