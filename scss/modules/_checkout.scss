@@ -1,0 +1,119 @@
+#checkout {
+  &:before {
+    content:"";
+    display:block;
+    height:5.5rem; /* fixed header height*/
+    margin:-5.5rem 0 0; /* negative fixed header height */
+  }
+  h2 {
+    margin-top: 0;
+  }
+  .simpleCart_items {
+    .headerRow {
+      display: none;
+    }
+    div[class*="item-"] {
+      // background-color: white;
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+    }
+    .item-name {
+      border-top-left-radius: 5px !important;
+      border-bottom-left-radius: 5px !important;
+    }
+    .item-price {
+      display: none !important;
+    }
+    .item-decrement, .item-quantity, .item-increment {
+      margin: 0 !important;
+      padding: 0.5rem 0 0.5rem 0 !important;
+      border-radius: 0px !important;
+      color: #c92121;
+      a{
+        color: #c92121;
+      }
+    }
+    .item-total {
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+    }
+    .item-remove {
+      margin-left: 1rem;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+      background-color: #9f1a1a !important;
+      border-radius: 5px;
+      border-bottom: none !important;
+    }
+  }
+  p {
+    display: block;
+    margin-top: 1rem;
+  }
+  .simpleCart_shipping, .simpleCart_tax, .simpleCart_grandTotal {
+    font-size: 1.5rem;
+    float: right;
+  }
+  div {
+    .simpleCart_empty, .show-shipping-address {
+      display: inline-block;
+      width: 49%;
+      height: 2rem;
+      padding-top: 0.25rem;
+      font-size: 1.5rem;
+      text-align: center;
+      border-radius: 2px;
+    }
+    .simpleCart_empty {
+      background-color: #9f1a1a;
+    }
+    .show-shipping-address {
+      background-color: #208a00;
+    }
+  }
+
+// Shipping address
+.shipping-address {
+  // display: none;
+  .form-box {
+    padding: 0;
+    width: 40%;
+  }
+  #delivery-form {
+    .asterix {
+      color: #c92121;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 1rem;
+      #comment-box {
+        width: 70%;
+        height: 5rem;
+        margin-left: 3.25rem;
+      }
+      .comment-box {
+        float: left;
+      }
+      input {
+        display: inline-block;
+        width: 70%;
+        height: 1.5rem;
+        font-family: inherit;
+        float: right;
+      }
+      #submit {
+        width: 50%;
+        height: 2rem;
+        padding: 0;
+        float: left;
+      }
+    }
+  }
+}
+}

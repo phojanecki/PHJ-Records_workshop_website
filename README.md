@@ -1,6 +1,6 @@
 # PHJ-Records_workshop_website
 
-This is a website of the fake record label "PHJ Records". It was created for non commercial purposes in order to practice HTML, CSS, Sass, JavaScript and jQuery skills. All images were modified in Photoshop CC 2015.
+This is a website of the fake record label "PHJ Records". It was created for non commercial purposes in order to practice HTML, CSS, Sass, JavaScript and jQuery skills. All images were modified in Photoshop CC 2015. Any comments and criticism regarding upgrades are welcomed :)
 
 Images used within that project were downloaded from:
 * http://agenciacn.com/variedades/coldplay-es-la-banda-mas-galardonada-del-reino-unido/

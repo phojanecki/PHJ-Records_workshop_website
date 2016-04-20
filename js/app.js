@@ -36,6 +36,14 @@ $('.music').on('click', function(event){
 // });
 
 // Shop
+
+var $showShippingAddress = $('.show-shipping-address');
+var $shippingAddressBox = $('.shipping-address');
+
+$showShippingAddress.on('click', function(){
+  $shippingAddressBox.slideToggle(1000);
+})
+
 simpleCart({
 			checkout: {
 				type: "PayPal",
@@ -48,4 +56,44 @@ simpleCart({
         option2: "value2"
     });
 
+//Shipping costs
+  simpleCart.shipping(function(){
+    return 7.99;
+  });
+  simpleCart.shipping();
+
+//Tax rate
+  simpleCart({
+  taxRate: 0.23
+  });
+
+  simpleCart.tax();
 });
+
+// Submit form
+
+function submitForm() {
+  var $form = $('#delivery-form');
+  var $name = $('#name');
+  var $street = $('#street');
+  var $city = $('#city');
+  var $post = $('#post');
+  var $email = $('#email');
+  var $tel = $('#tel');
+  var $submit = $('#submit');
+
+  $form.on('submit', function(){
+    var inputName = $(name).val();
+    var inputStreet = $(street).val();
+    var inputCity = $(city).val();
+    var inputPost = $(post).val();
+    var inputemail = $(email).val();
+    var inputTel = $(tel).val();
+
+    if(inputName < 5 || inputMessage < 10){
+      $(error).text("Imię lub wiadomość jest za krótka.");
+      submit.preventDefault();
+    }
+  });
+}
+submitForm();
