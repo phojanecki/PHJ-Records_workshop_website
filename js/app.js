@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  // News slider
+// News slider
   $("#slideshow > div:gt(0)").hide();
   setInterval(function() {
     $('#slideshow > div:first')
@@ -11,13 +11,20 @@ $(document).ready(function(){
       .appendTo('#slideshow');
   },  4000);
 
-// Sticky menu scrolls to anchor
+// Sticky menu + smooth scrooling to anchor
 $('#menu .inner-link').on('click', function(event){
   event.preventDefault();
   $('body').animate({
     scrollTop: $($(this).attr("href")).offset().top + "px",
   }, 1500);
 });
+
+// Anchor to specified offset on different subpage
+if (window.location.hash != null && window.location.hash != '') {
+        $('body').animate({
+            scrollTop: $(window.location.hash).offset().top
+        }, 1000);
+}
 
 // Smooth scrolling for 'Music' link
 $('.music').on('click', function(event){
@@ -27,34 +34,73 @@ $('.music').on('click', function(event){
   }, 1000);
 });
 
-// Purchase confirmation - notification on-screen
-// $('.item_add').on('click', function() {
-//   $('body').fadeTo(1000, 0.6).delay(1000);
-//   $('#purchase-confirmation').fadeIn(1000).delay(1000);
-//   $('#purchase-confirmation').fadeOut(1000);
-//   $('body').fadeTo(1000, 1);
-// });
+// Submit form (does not work yet)
+function validateForm() {
+  var $form = $('#delivery-form');
+  var $name = $('#name');
+  var $street = $('#street');
+  var $city = $('#city');
+  var $post = $('#post');
+  var $email = $('#email');
+  var $tel = $('#tel');
+  var $submit = $('#submit');
 
-// Shop
+  $('.simpleCart_checkout').on('click', function(e){
+    // e.preventDefault();
+    var inputName = $(name).val();
+    var inputStreet = $(street).val();
+    var inputCity = $(city).val();
+    var inputPost = $(post).val();
+    var inputEmail = $(email).val();
+    var inputTel = $(tel).val();
 
+    // ((inputName == null || inputName == "")
+    //   && (inputStreet == null || inputStreet == "")
+    //   && (inputCity == null || inputCity == "")
+    //   && (inputPost == null || inputPost == "")
+    //   && (inputEmail == null || inputEmail == "")
+    //   && (inputTel == null || inputTel == ""))
+
+
+    if ((inputName == "")
+      || (inputStreet == "")
+      || (inputCity == "")
+      || (inputPost == "")
+      || (inputEmail == "")
+      || (inputTel = "")) {
+      alert("Please fill in obligatory fields");
+      e.preventDefault();
+    } else {
+      $submit.addClass('simpleCart_checkout');
+      // e.preventDefault();
+      simpleCart({
+        checkout: {
+          type: "PayPal",
+          email: "you@yours.com"
+        }
+      });
+    }
+  });
+}
+// validateForm();
+
+// Show shipping address
 var $showShippingAddress = $('.show-shipping-address');
 var $shippingAddressBox = $('.shipping-address');
 
 $showShippingAddress.on('click', function(){
   $shippingAddressBox.slideToggle(1000);
-})
+});
 
-simpleCart({
-			checkout: {
-				type: "PayPal",
-				email: "you@yours.com"
-			}
-		});
 
-    simpleCart({
-        option1: "value" ,
-        option2: "value2"
-    });
+// SIMPLE CART
+  simpleCart({
+    checkout: {
+      type: "PayPal",
+      email: "you@yours.com"
+    }
+  });
+
 
 //Shipping costs
   simpleCart.shipping(function(){
@@ -69,31 +115,3 @@ simpleCart({
 
   simpleCart.tax();
 });
-
-// Submit form
-
-function submitForm() {
-  var $form = $('#delivery-form');
-  var $name = $('#name');
-  var $street = $('#street');
-  var $city = $('#city');
-  var $post = $('#post');
-  var $email = $('#email');
-  var $tel = $('#tel');
-  var $submit = $('#submit');
-
-  $form.on('submit', function(){
-    var inputName = $(name).val();
-    var inputStreet = $(street).val();
-    var inputCity = $(city).val();
-    var inputPost = $(post).val();
-    var inputemail = $(email).val();
-    var inputTel = $(tel).val();
-
-    if(inputName < 5 || inputMessage < 10){
-      $(error).text("Imię lub wiadomość jest za krótka.");
-      submit.preventDefault();
-    }
-  });
-}
-submitForm();

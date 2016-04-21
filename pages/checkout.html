@@ -37,7 +37,7 @@
             <a href="javascript:;" class="simpleCart_empty">Empty</a>
           </td>
           <td>
-            <a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+            <a href="checkout.html" class="simpleCart_checkout">Checkout</a>
           </td>
         </tr>
       </table>
@@ -46,12 +46,12 @@
       <nav id="menu" class="col-9">
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#artists">Artists</a></li>
-          <li><a href="#releases">Releases</a></li>
+          <li><a href="../index.html#news">News</a></li>
+          <li><a href="../index.html#artists">Artists</a></li>
+          <li><a href="../index.html#releases">Releases</a></li>
           <li><a href="videos.html">Videos</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="../index.html#events">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
   </div>
@@ -82,10 +82,10 @@
     <div class="row shipping-address">
       <p class="section-name">Shipping address</p>
       <div class="col-12 form-box">
-        <form id="delivery-form">
+        <form id="delivery-form" method="post">
           <label>
             <span>Full name:<span class="asterix">*</span></span>
-            <input id='name' type="text" name="Full name" required />
+            <input id='name' type="text" name="Full name" required/>
           </label>
           <label>
             <span>Company:<span class="asterix"></span></span>
@@ -117,7 +117,7 @@
           </label>
           <span class="asterix">*obligatory fields</span>
           <label>
-            <input id="submit" class="" href="javascript:;" type="submit" value="Buy now">
+            <input id="submit" class="simpleCart_checkout" href="javascript:;" value="Buy now" type="submit"/>
           </label>
         </form>
       </div>
@@ -128,7 +128,7 @@
 <!-- Section Releases -->
 <section id="releases">
   <div class="grid-container">
-    <p class="section-name">Other releases</p>
+    <p class="section-name">You might also be interested in</p>
     <p class="content">
       Ut id porttitor justo. Quisque a lorem justo. In sollicitudin erat vitae aliquam consectetur. Phasellus maximus aliquet eros quis vestibulum.
       Nam feugiat tortor a dolor dapibus, et mollis arcu posuere. Ut metus neque, aliquam non hendrerit fringilla, volutpat sit amet dui.

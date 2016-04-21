@@ -93,12 +93,13 @@
 
 					cartStyle				: "div",
 					cartColumns			: [
+						// { view:'image' , attr:'thumb', label: false },
 						{ attr: "name", label: "Name" },
 						{ attr: "price", label: "Price", view: 'currency' },
-						{ view: "decrement", label: false },
-						{ attr: "quantity", label: "Qty" },
-						{ view: "increment", label: false },
 						{ attr: "total", label: "SubTotal", view: 'currency' },
+						{ attr: "quantity", label: "Qty" },
+						{ view: "decrement", label: false },
+						{ view: "increment", label: false },
 						{ view: "remove", text: "Remove", label: false }
 					],
 

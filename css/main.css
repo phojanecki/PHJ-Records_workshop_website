@@ -127,7 +127,7 @@ body a:visited {
 }
 
 body .section-name {
-  width: 25%;
+  width: 50%;
   font-size: 2rem;
   border-bottom: 1px solid white;
 }
@@ -160,9 +160,16 @@ header .cart {
   right: 0.5rem;
   width: 11rem;
   height: 4.5rem;
-  background-color: #c92121;
   border-radius: 5px;
   text-align: center;
+  background: #ed2626;
+  background: -moz-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ed2626), color-stop(100%, #9f1a1a));
+  background: -webkit-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -o-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -ms-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: linear-gradient(to bottom, #ed2626 0%, #9f1a1a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2626', endColorstr='#9f1a1a', GradientType=0 );
 }
 
 header .cart td {
@@ -191,14 +198,27 @@ header .cart .simpleCart_empty {
   height: 2rem;
   padding: 2.5px 0.9rem 2.5px 0.9rem;
   border-radius: 2px;
-  background-color: #9f1a1a;
+  background: #ed2626;
+  background: -moz-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ed2626), color-stop(100%, #9f1a1a));
+  background: -webkit-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -o-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -ms-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: linear-gradient(to bottom, #ed2626 0%, #9f1a1a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2626', endColorstr='#9f1a1a', GradientType=0 );
 }
 
 header .cart .simpleCart_checkout {
   height: 2rem;
   padding: 2.5px;
   border-radius: 2px;
-  background-color: #208a00;
+  background: -moz-linear-gradient(top, #33db00 0%, #208a00 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #33db00), color-stop(100%, #208a00));
+  background: -webkit-linear-gradient(top, #33db00 0%, #208a00 100%);
+  background: -o-linear-gradient(top, #33db00 0%, #208a00 100%);
+  background: -ms-linear-gradient(top, #33db00 0%, #208a00 100%);
+  background: linear-gradient(to bottom, #33db00 0%, #208a00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33db00', endColorstr='#208a00', GradientType=0 );
 }
 
 .grid-container {
@@ -464,13 +484,20 @@ Otherwise it will hide behind the header.*/
 
 #videos .see-all a {
   margin: 0 1rem 0 1rem;
+  padding-top: 1rem;
   width: 15rem;
   height: 3rem;
-  background-color: #c92121;
   border-radius: 5px;
-  font-size: 1.3rem;
   text-align: center;
-  padding-top: 1rem;
+  font-size: 1.3rem;
+  background: #ed2626;
+  background: -moz-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ed2626), color-stop(100%, #9f1a1a));
+  background: -webkit-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -o-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -ms-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: linear-gradient(to bottom, #ed2626 0%, #9f1a1a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2626', endColorstr='#9f1a1a', GradientType=0 );
 }
 
 footer {
@@ -568,13 +595,16 @@ footer .footer-contact .icon-mail {
   margin-bottom: 1rem;
   margin-left: 3.5rem;
   padding: 0.5rem;
-  background-color: #c92121;
   font-size: 1.5rem;
   border-radius: 5px;
-}
-
-#albums .album .item_add:hover {
-  background-color: #9f1a1a;
+  background: #ed2626;
+  background: -moz-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ed2626), color-stop(100%, #9f1a1a));
+  background: -webkit-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -o-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -ms-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: linear-gradient(to bottom, #ed2626 0%, #9f1a1a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2626', endColorstr='#9f1a1a', GradientType=0 );
 }
 
 #albums .track-list {
@@ -623,12 +653,19 @@ footer .footer-contact .icon-mail {
 
 #videos .buttons a {
   margin: 0 1rem 0 1rem;
+  padding-top: 0.8rem;
   width: 10rem;
   height: 2.5rem;
-  background-color: #c92121;
   border-radius: 5px;
   text-align: center;
-  padding-top: 0.8rem;
+  background: #ed2626;
+  background: -moz-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ed2626), color-stop(100%, #9f1a1a));
+  background: -webkit-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -o-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -ms-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: linear-gradient(to bottom, #ed2626 0%, #9f1a1a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2626', endColorstr='#9f1a1a', GradientType=0 );
 }
 
 #checkout:before {
@@ -658,26 +695,37 @@ footer .footer-contact .icon-mail {
 }
 
 #checkout .simpleCart_items .item-name {
-  border-top-left-radius: 5px !important;
-  border-bottom-left-radius: 5px !important;
+  width: 50%;
 }
 
 #checkout .simpleCart_items .item-price {
   display: none !important;
 }
 
-#checkout .simpleCart_items .item-decrement, #checkout .simpleCart_items .item-quantity, #checkout .simpleCart_items .item-increment {
-  margin: 0 !important;
-  padding: 0.5rem 0 0.5rem 0 !important;
-  border-radius: 0px !important;
-  color: #c92121;
+#checkout .simpleCart_items .item-quantity {
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
 }
 
-#checkout .simpleCart_items .item-decrement a, #checkout .simpleCart_items .item-quantity a, #checkout .simpleCart_items .item-increment a {
-  color: #c92121;
+#checkout .simpleCart_items .item-increment {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+#checkout .simpleCart_items .item-quantity, #checkout .simpleCart_items .item-decrement, #checkout .simpleCart_items .item-increment {
+  margin: 0 !important;
+  padding: 0.25rem 0.5rem 0.4rem 0.5rem !important;
+  color: #c92121 !important;
+  background-color: white;
+  font-size: 1.25rem !important;
+}
+
+#checkout .simpleCart_items .item-quantity a, #checkout .simpleCart_items .item-decrement a, #checkout .simpleCart_items .item-increment a {
+  color: #c92121 !important;
 }
 
 #checkout .simpleCart_items .item-total {
+  width: 10%;
   border-top-right-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
 }
@@ -712,11 +760,30 @@ footer .footer-contact .icon-mail {
 }
 
 #checkout div .simpleCart_empty {
-  background-color: #9f1a1a;
+  background: #ed2626;
+  background: -moz-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ed2626), color-stop(100%, #9f1a1a));
+  background: -webkit-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -o-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: -ms-linear-gradient(top, #ed2626 0%, #9f1a1a 100%);
+  background: linear-gradient(to bottom, #ed2626 0%, #9f1a1a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2626', endColorstr='#9f1a1a', GradientType=0 );
 }
 
 #checkout div .show-shipping-address {
-  background-color: #208a00;
+  background: #33db00;
+  background: -moz-linear-gradient(top, #33db00 0%, #208a00 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #33db00), color-stop(100%, #208a00));
+  background: -webkit-linear-gradient(top, #33db00 0%, #208a00 100%);
+  background: -o-linear-gradient(top, #33db00 0%, #208a00 100%);
+  background: -ms-linear-gradient(top, #33db00 0%, #208a00 100%);
+  background: linear-gradient(to bottom, #33db00 0%, #208a00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33db00', endColorstr='#208a00', GradientType=0 );
+  cursor: pointer;
+}
+
+#checkout .shipping-address {
+  display: none;
 }
 
 #checkout .shipping-address .form-box {
@@ -758,4 +825,85 @@ footer .footer-contact .icon-mail {
   height: 2rem;
   padding: 0;
   float: left;
+}
+
+#contact .spacer {
+  height: 10rem;
+}
+
+#contact #contact-form .asterix {
+  color: #c92121;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#contact #contact-form label {
+  display: block;
+  margin: 1rem;
+}
+
+#contact #contact-form label #message-box {
+  width: 70%;
+  height: 5rem;
+  margin: 0.5rem 0 1rem 0;
+  float: right;
+}
+
+#contact #contact-form label input {
+  display: inline-block;
+  width: 70%;
+  height: 1.5rem;
+  font-family: inherit;
+  float: right;
+}
+
+#contact #contact-form label #submit {
+  width: 35%;
+  height: 2rem;
+  padding: 0;
+  float: right;
+}
+
+#contact #check-music {
+  border-bottom: 1px solid white;
+}
+
+#contact #check-music:before {
+  content: "";
+  display: block;
+  height: 5.5rem;
+  /* fixed header height*/
+  margin: -5.5rem 0 0;
+  /* negative fixed header height */
+}
+
+#contact #check-music .artist {
+  position: relative;
+  width: 5.5rem;
+  height: 5.5rem;
+  float: left;
+  padding: 0;
+}
+
+#contact #check-music .artist img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#contact #check-music .artist .media-container h1 {
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  z-index: 1;
+  top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  background-color: #c92121;
+  opacity: 0.9;
+  padding-top: 0.6rem;
+}
+
+#contact #check-music .artist .media-container h1:hover {
+  background-color: #9f1a1a;
 }

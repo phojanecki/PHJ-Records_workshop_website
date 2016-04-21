@@ -13,7 +13,6 @@
       display: none;
     }
     div[class*="item-"] {
-      // background-color: white;
       color: white;
       font-size: 1rem;
       font-weight: bold;
@@ -22,22 +21,31 @@
       padding: 0.5rem;
     }
     .item-name {
-      border-top-left-radius: 5px !important;
-      border-bottom-left-radius: 5px !important;
+      width: 50%;
     }
     .item-price {
       display: none !important;
     }
-    .item-decrement, .item-quantity, .item-increment {
+    .item-quantity {
+      border-top-left-radius: 5px !important;
+      border-bottom-left-radius: 5px !important;
+    }
+    .item-increment {
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 5px !important;
+    }
+    .item-quantity, .item-decrement, .item-increment{
       margin: 0 !important;
-      padding: 0.5rem 0 0.5rem 0 !important;
-      border-radius: 0px !important;
-      color: #c92121;
-      a{
-        color: #c92121;
+      padding: 0.25rem 0.5rem 0.4rem 0.5rem !important;
+      color: #c92121 !important;
+      background-color: white;
+      font-size: 1.25rem !important;
+      a {
+        color: #c92121 !important;
       }
     }
     .item-total {
+      width: 10%;
       border-top-right-radius: 5px !important;
       border-bottom-right-radius: 5px !important;
     }
@@ -69,16 +77,31 @@
       border-radius: 2px;
     }
     .simpleCart_empty {
-      background-color: #9f1a1a;
+      background: rgba(237,38,38,1);
+      background: -moz-linear-gradient(top, rgba(237,38,38,1) 0%, rgba(159,26,26,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(237,38,38,1)), color-stop(100%, rgba(159,26,26,1)));
+      background: -webkit-linear-gradient(top, rgba(237,38,38,1) 0%, rgba(159,26,26,1) 100%);
+      background: -o-linear-gradient(top, rgba(237,38,38,1) 0%, rgba(159,26,26,1) 100%);
+      background: -ms-linear-gradient(top, rgba(237,38,38,1) 0%, rgba(159,26,26,1) 100%);
+      background: linear-gradient(to bottom, rgba(237,38,38,1) 0%, rgba(159,26,26,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2626', endColorstr='#9f1a1a', GradientType=0 );
     }
     .show-shipping-address {
-      background-color: #208a00;
+      background: rgba(51,219,0,1);
+      background: -moz-linear-gradient(top, rgba(51,219,0,1) 0%, rgba(32,138,0,1) 100%);
+      background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(51,219,0,1)), color-stop(100%, rgba(32,138,0,1)));
+      background: -webkit-linear-gradient(top, rgba(51,219,0,1) 0%, rgba(32,138,0,1) 100%);
+      background: -o-linear-gradient(top, rgba(51,219,0,1) 0%, rgba(32,138,0,1) 100%);
+      background: -ms-linear-gradient(top, rgba(51,219,0,1) 0%, rgba(32,138,0,1) 100%);
+      background: linear-gradient(to bottom, rgba(51,219,0,1) 0%, rgba(32,138,0,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33db00', endColorstr='#208a00', GradientType=0 );
+      cursor: pointer;
     }
   }
 
 // Shipping address
 .shipping-address {
-  // display: none;
+  display: none;
   .form-box {
     padding: 0;
     width: 40%;
