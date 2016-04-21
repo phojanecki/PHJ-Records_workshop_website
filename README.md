@@ -1,6 +1,9 @@
-# PHJ-Records_workshop_website
+#PHJ Records - workshop website
 
-This is a website of the fake record label "PHJ Records". It was created for non commercial purposes in order to practice HTML, CSS, Sass, JavaScript and jQuery skills. All images were modified in Photoshop CC 2015. Any comments and criticism regarding upgrades are welcomed :)
+This is a website of the fake record label PHJ Records.
+It was created for non commercial purposes in order to practice HTML, CSS, Sass, JavaScript and jQuery skills.
+All images included in this project were modified in Photoshop CC 2015
+Your feedback (both positive and negative) will be very welcome :)
 
 Images used within that project were downloaded from:
 * http://agenciacn.com/variedades/coldplay-es-la-banda-mas-galardonada-del-reino-unido/
@@ -10,7 +13,7 @@ Images used within that project were downloaded from:
 * http://www.allwallpaper.in/de/music-concert-wallpaper-8754.html
 * http://hersplendidplumage.com/
 
-Artists:
+Artists images:
 * http://mad-music.pl/wp-content/uploads/2015/02/G-Wiz.jpg
 * http://uwmpost.com/fringe/concert-preview-the-1975-at-the-rave
 * http://www.koncertomania.pl/newsy/87433-Years-Years-blyszczy.html
@@ -24,4 +27,4 @@ Artists:
 Album covers:
 * http://www.albumartexchange.com/
 
-All rights are reserved to the respective owners.
+All rights to the music and videos used within the project are reserved to the respective owners.
