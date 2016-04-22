@@ -14,223 +14,230 @@
 </head>
 
 <body>
-  <header id="home" class="sticky">
-      <table class="cart">
-        <tr>
-          <td>
-            <p class="items">Items:</p>
-          </td>
-          <td>
-            <p class="items">Total:</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p><span class="simpleCart_quantity"></span></p>
-          </td>
-          <td>
-            <p><span class="simpleCart_total"></span></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="javascript:;" class="simpleCart_empty">Empty</a>
-          </td>
-          <td>
-            <a href="../checkout.html" class="simpleCart_checkout">Checkout</a>
-          </td>
-        </tr>
-      </table>
-   <div class="grid-container">
-      <div id="main-logo" class="col-3"><a href="../../index.html"><img src="../../images/logo.png" alt="PHJ Records logo" /></a></div>
-      <nav id="menu" class="col-9">
-        <ul>
-          <li><a href="../../index.html">Home</a></li>
-          <li><a href="../../index.html#news">News</a></li>
-          <li><a href="../../index.html#artists">Artists</a></li>
-          <li><a href="../../index.html#releases">Releases</a></li>
-          <li><a href="../videos.html">Videos</a></li>
-          <li><a href="../../index.html#events">Events</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-        </ul>
-      </nav>
-  </div>
-  </header>
+  <div class="wrapper">
+    <header id="home" class="sticky">
+        <table class="cart">
+          <tr>
+            <td>
+              <p class="items">Items:</p>
+            </td>
+            <td>
+              <p class="items">Total:</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span class="simpleCart_quantity"></span></p>
+            </td>
+            <td>
+              <p><span class="simpleCart_total"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="javascript:;" class="simpleCart_empty">Empty</a>
+            </td>
+            <td>
+              <a href="../checkout.html" class="simpleCart_checkout">Checkout</a>
+            </td>
+          </tr>
+        </table>
+     <div class="grid-container">
+        <nav class="col-8 main-navigation">
+          <div id="hamburger"></div>
+          <ul id="menu">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#news">News</a></li>
+            <li><a href="../../index.html#artists">Artists</a></li>
+            <li><a href="../../index.html#releases">Releases</a></li>
+            <li><a href="../videos.html">Videos</a></li>
+            <li><a href="../../index.html#events">Events</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="main-logo" class="col-3">
+          <a href="../../index.html">
+            <img src="../../images/logo.png" alt="PHJ Records logo" />
+          </a>
+        </div>
+    </div>
+    </header>
 
   <!-- Spacer is necessary to have 'Section News' visible.
   Otherwise it will hide behind the header. -->
   <div id="spacer"></div>
 
-<!-- Section Albums -->
-<section id="albums" class="simpleCart_shelfItem">
-  <div class="grid-container">
-    <p class="section-name item_name">Years &amp; Years - Communion</p>
-    <div class="row">
-      <div class="col-4 album">
-        <img src="../../images/releases/communion_album.jpg" alt="Years & Years album" />
-        <p class="item_price">Price: $7.99</p>
-        <p>Released: 10 July 2015</p>
-        <p>Length: 48:26</p>
-        <p>Genre: Synthpop</p>
-        <a href="https://open.spotify.com/album/7BZ81dThqcxbFTXKY36Oek" target="_blank"><i class="icon-spotify"></i></a>
-        <a href="https://www.youtube.com/user/YearsAndYearsVEVO" target="_blank"><i class="icon-youtube"></i></a>
-        <a class="item_add" href="javascript:;">Add to cart</a>
-        <div id="purchase-confirmation">Thank you for purchase!</div>
-      </div>
-      <div class="col-8 track-list">
-        <ol>
-          <li>"Foundation"</li>
-          <li>"Real"</li>
-          <li>"Shine"</li>
-          <li>"Take Shelter"</li>
-          <li>"Worship"</li>
-          <li>"Eyes Shut"</li>
-          <li>"Ties"</li>
-          <li>"King"</li>
-          <li>"Desire"</li>
-          <li>"Gold"</li>
-          <li>"Without"</li>
-          <li>"Border"</li>
-          <li>"Memo"</li>
-        </ol>
-      </div>
-      <div class="col-12 album-description">
-        Mauris lectus nibh, pulvinar et hendrerit sit amet, lacinia sed sem. Fusce sit amet felis sit amet justo hendrerit rutrum egestas in ligula. Maecenas facilisis aliquam tempor. Donec eget malesuada ligula. Ut porttitor fringilla pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id sem diam. Aliquam ultrices diam at bibendum tincidunt. Maecenas scelerisque, leo sit amet facilisis mollis, enim mauris lacinia est, sed malesuada purus nibh quis tellus. Nunc vel arcu enim.
-      </div>
-</section>
-
-<!-- Section Videos -->
-  <section id="videos">
+  <!-- Section Albums -->
+  <section id="albums" class="simpleCart_shelfItem">
     <div class="grid-container">
+      <p class="section-name item_name">Years &amp; Years - Communion</p>
       <div class="row">
-        <div class="col-12 heading">
-          <p class="section-name">Video</p>
+        <div class="col-4 album">
+          <img src="../../images/releases/communion_album.jpg" alt="Years & Years album" />
+          <p class="item_price">Price: $7.99</p>
+          <p>Released: 10 July 2015</p>
+          <p>Length: 48:26</p>
+          <p>Genre: Synthpop</p>
+          <a href="https://open.spotify.com/album/7BZ81dThqcxbFTXKY36Oek" target="_blank"><i class="icon-spotify"></i></a>
+          <a href="https://www.youtube.com/user/YearsAndYearsVEVO" target="_blank"><i class="icon-youtube"></i></a>
+          <a class="item_add" href="javascript:;">Add to cart</a>
+          <div id="purchase-confirmation">Thank you for purchase!</div>
         </div>
-        <div class="col-4 gifs">
-          <img src="../../videos/years-and-years/years-and-years_1.gif"/>
+        <div class="col-8 track-list">
+          <ol>
+            <li>"Foundation"</li>
+            <li>"Real"</li>
+            <li>"Shine"</li>
+            <li>"Take Shelter"</li>
+            <li>"Worship"</li>
+            <li>"Eyes Shut"</li>
+            <li>"Ties"</li>
+            <li>"King"</li>
+            <li>"Desire"</li>
+            <li>"Gold"</li>
+            <li>"Without"</li>
+            <li>"Border"</li>
+            <li>"Memo"</li>
+          </ol>
         </div>
-        <div class="col-4 gifs">
-          <img src="../../videos/years-and-years/years-and-years_2.gif"/>
+        <div class="col-12 album-description">
+          Mauris lectus nibh, pulvinar et hendrerit sit amet, lacinia sed sem. Fusce sit amet felis sit amet justo hendrerit rutrum egestas in ligula. Maecenas facilisis aliquam tempor. Donec eget malesuada ligula. Ut porttitor fringilla pretium. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id sem diam. Aliquam ultrices diam at bibendum tincidunt. Maecenas scelerisque, leo sit amet facilisis mollis, enim mauris lacinia est, sed malesuada purus nibh quis tellus. Nunc vel arcu enim.
         </div>
-        <div class="col-4 gifs">
-          <img src="../../videos/years-and-years/years-and-years_3.gif"/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 see-all">
-          <a href="../../pages/videos.html#years-and-years"><div>See all</div></a>
-        </div>
-      </div>
-    </div>
   </section>
 
-  <!-- Section Releases -->
-  <section id="releases">
-    <div class="grid-container">
-      <p class="section-name">Other releases</p>
-      <div class="row">
-        <div class="col-4 release">
-          <h6>Wiz Khalifa</h6>
-          <p>Khalifa</p>
+  <!-- Section Videos -->
+    <section id="videos">
+      <div class="grid-container">
+        <div class="row">
+          <div class="col-12 heading">
+            <p class="section-name">Video</p>
+          </div>
+          <div class="col-4 gifs">
+            <img src="../../videos/years-and-years/years-and-years_1.gif"/>
+          </div>
+          <div class="col-4 gifs">
+            <img src="../../videos/years-and-years/years-and-years_2.gif"/>
+          </div>
+          <div class="col-4 gifs">
+            <img src="../../videos/years-and-years/years-and-years_3.gif"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 see-all">
+            <a href="../../pages/videos.html#years-and-years"><div>See all</div></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Releases -->
+    <section id="releases">
+      <div class="grid-container">
+        <p class="section-name">Other releases</p>
+        <div class="row">
+          <div class="col-4 release">
+            <h6>Wiz Khalifa</h6>
+            <p>Khalifa</p>
+              <div class="album-container">
+                <img src="../../images/releases/khalifa_album.jpg" alt="Khalifa album" />
+                <p class="more-info"><a href="khalifa_album.html">More information</a></p>
+              </div>
+          </div>
+          <div class="col-4 release">
+              <h6>Jack Ü</h6>
+              <p>Skrillex and Diplo Present Jack Ü</p>
             <div class="album-container">
-              <img src="../../images/releases/khalifa_album.jpg" alt="Khalifa album" />
-              <p class="more-info"><a href="khalifa_album.html">More information</a></p>
+              <img src="../../images/releases/jack-u_album.jpg" alt="Skrillex and Diplo Present Jack Ü album"/>
+              <p class="more-info"><a href="jack-u_album.html">More information</a></p>
             </div>
-        </div>
-        <div class="col-4 release">
-            <h6>Jack Ü</h6>
-            <p>Skrillex and Diplo Present Jack Ü</p>
-          <div class="album-container">
-            <img src="../../images/releases/jack-u_album.jpg" alt="Skrillex and Diplo Present Jack Ü album"/>
-            <p class="more-info"><a href="jack-u_album.html">More information</a></p>
           </div>
-        </div>
-        <div class="col-4 release">
-          <h6>The 1975</h6>
-          <p>ILIWYSFYASBYSUOI</p>
-          <div class="album-container">
-            <img src="../../images/releases/iliwysfyasbysuoi_album.jpg" alt="ILIWYSFYASBYSUOI album"/>
-            <p class="more-info"><a href="the-1975_album.html">More information</a></p>
+          <div class="col-4 release">
+            <h6>The 1975</h6>
+            <p>ILIWYSFYASBYSUOI</p>
+            <div class="album-container">
+              <img src="../../images/releases/iliwysfyasbysuoi_album.jpg" alt="ILIWYSFYASBYSUOI album"/>
+              <p class="more-info"><a href="the-1975_album.html">More information</a></p>
+            </div>
           </div>
-        </div>
-        <div class="col-4 release">
-          <h6>Years &amp; Years</h6>
-          <p>Communion</p>
-          <div class="album-container">
-            <img src="../../images/releases/communion_album.jpg" alt="Communion"/>
-            <p class="more-info"><a href="years-and-years_album.html">More information</a></p>
+          <div class="col-4 release">
+            <h6>Years &amp; Years</h6>
+            <p>Communion</p>
+            <div class="album-container">
+              <img src="../../images/releases/communion_album.jpg" alt="Communion"/>
+              <p class="more-info"><a href="years-and-years_album.html">More information</a></p>
+            </div>
           </div>
-        </div>
-        <div class="col-4 release">
-          <h6>Coldplay</h6>
-          <p>A Head Full Of Dreams</p>
-          <div class="album-container">
-            <img src="../../images/releases/a-head-full-of-dreams_album.jpg" alt="A Head Full Of Dreams album"/>
-            <p class="more-info"><a href="coldplay_album.html">More information</a></p>
+          <div class="col-4 release">
+            <h6>Coldplay</h6>
+            <p>A Head Full Of Dreams</p>
+            <div class="album-container">
+              <img src="../../images/releases/a-head-full-of-dreams_album.jpg" alt="A Head Full Of Dreams album"/>
+              <p class="more-info"><a href="coldplay_album.html">More information</a></p>
+            </div>
           </div>
-        </div>
-        <div class="col-4 release">
-          <h6>The Weeknd</h6>
-          <p>Beauty Behind The Madness</p>
-          <div class="album-container">
-            <img src="../../images/releases/beauty-behind-the-madness_album.jpg" alt="Beauty Behind The Madness" />
-            <p class="more-info"><a href="the-weeknd_album.html">More information</a></p>
+          <div class="col-4 release">
+            <h6>The Weeknd</h6>
+            <p>Beauty Behind The Madness</p>
+            <div class="album-container">
+              <img src="../../images/releases/beauty-behind-the-madness_album.jpg" alt="Beauty Behind The Madness" />
+              <p class="more-info"><a href="the-weeknd_album.html">More information</a></p>
+            </div>
           </div>
-        </div>
-        <div class="col-4 release">
-          <h6>Tyga</h6>
-          <p>Hotel California</p>
-          <div class="album-container">
-            <img src="../../images/releases/hotel-california_album.jpg" alt="Hotel California"/>
-            <p class="more-info"><a href="tyga_album.html">More information</a></p>
+          <div class="col-4 release">
+            <h6>Tyga</h6>
+            <p>Hotel California</p>
+            <div class="album-container">
+              <img src="../../images/releases/hotel-california_album.jpg" alt="Hotel California"/>
+              <p class="more-info"><a href="tyga_album.html">More information</a></p>
+            </div>
           </div>
-        </div>
-        <div class="col-4 release">
-          <h6>Major Lazer</h6>
-          <p>Peace Is The Mission</p>
-          <div class="album-container">
-            <img src="../../images/releases/peace-is-the-mission_album.jpg" alt="Peace Is The Mission" />
-            <p class="more-info"><a href="major-lazer_album.html">More information</a></p>
+          <div class="col-4 release">
+            <h6>Major Lazer</h6>
+            <p>Peace Is The Mission</p>
+            <div class="album-container">
+              <img src="../../images/releases/peace-is-the-mission_album.jpg" alt="Peace Is The Mission" />
+              <p class="more-info"><a href="major-lazer_album.html">More information</a></p>
+            </div>
           </div>
-        </div>
-        <div class="col-4 release">
-          <h6>Kid Ink</h6>
-          <p>Full Speed</p>
-          <div class="album-container">
-            <img src="../../images/releases/full-speed_album.jpg" alt="Full Speed"/>
-            <p class="more-info"><a href="kid-ink_album.html">More information</a></p>
+          <div class="col-4 release">
+            <h6>Kid Ink</h6>
+            <p>Full Speed</p>
+            <div class="album-container">
+              <img src="../../images/releases/full-speed_album.jpg" alt="Full Speed"/>
+              <p class="more-info"><a href="kid-ink_album.html">More information</a></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-<!-- Footer -->
-<footer>
-  <div class="grid-container">
-    <div class="row">
-      <div class="col-4 footer-contact">
-        <h2>PHJ Records</h2>
-        <p>StreetName, 00-789 CityName, Poland</p>
-        <p>tel. (12) 345 67 89</p>
-        <p>mob. 123 456 789</p>
-        <i class="icon-mail"></i>
-        <a href="mailto:pawel.ho.janecki@gmail.com"><span class="email">pawel.ho.janecki@gmail.com</span></a>
-      </div>
-      <div class="col-4 footer-contact">
-        <a href="../../index.html"><img src="../../images/logo.png" alt="PHJ Records logo"/></a>
-      </div>
-      <div class="col-4 footer-contact">
-        <a href="https://www.linkedin.com/profile/preview?locale=pl_PL&trk=prof-0-sb-preview-primary-button" target="_blank"><i class="icon-linkedin-squared"></i></a>
-        <a href="https://www.facebook.com/phojanecki" target="_blank"><i class="icon-facebook-squared"></i></a>
-        <a href="https://plus.google.com/" target="_blank"><i class="icon-gplus-squared"></i></a>
-        <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-squared"></i></a>
-        <a href="https://www.twitter.com/" target="_blank"><i class="icon-twitter-squared"></i></a>
-        <a href="https://www.spotify.com/" target="_blank"><i class="icon-spotify"></i></a>
+  <!-- Footer -->
+  <footer>
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-4 footer-contact">
+          <h2>PHJ Records</h2>
+          <p>StreetName, 00-789 CityName, Poland</p>
+          <p>tel. (12) 345 67 89</p>
+          <p>mob. 123 456 789</p>
+          <i class="icon-mail"></i>
+          <a href="mailto:pawel.ho.janecki@gmail.com"><span class="email">pawel.ho.janecki@gmail.com</span></a>
+        </div>
+        <div class="col-4 footer-contact">
+          <a href="../../index.html"><img src="../../images/logo.png" alt="PHJ Records logo"/></a>
+        </div>
+        <div class="col-4 footer-contact">
+          <a href="https://www.linkedin.com/profile/preview?locale=pl_PL&trk=prof-0-sb-preview-primary-button" target="_blank"><i class="icon-linkedin-squared"></i></a>
+          <a href="https://www.facebook.com/phojanecki" target="_blank"><i class="icon-facebook-squared"></i></a>
+          <a href="https://plus.google.com/" target="_blank"><i class="icon-gplus-squared"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-squared"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="icon-twitter-squared"></i></a>
+          <a href="https://www.spotify.com/" target="_blank"><i class="icon-spotify"></i></a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</div>
 </body>
 
 </html>

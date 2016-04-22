@@ -1,20 +1,10 @@
 $(document).ready(function(){
 
+// Hamburger push left
   $('#hamburger').on('click', function (){
     console.log('dziala');
     $('.wrapper').toggleClass('open');
   });
-
-// News slider
-  $("#slideshow > div:gt(0)").hide();
-  setInterval(function() {
-    $('#slideshow > div:first')
-      .fadeOut(2000)
-      .next()
-      .fadeIn(2000)
-      .end()
-      .appendTo('#slideshow');
-  },  4000);
 
 // Sticky menu + smooth scrooling to anchor
 $('#menu .inner-link').on('click', function(event){
@@ -30,6 +20,17 @@ if (window.location.hash != null && window.location.hash != '') {
             scrollTop: $(window.location.hash).offset().top
         }, 1000);
 }
+
+// News slider
+$("#slideshow > div:gt(0)").hide();
+setInterval(function() {
+  $('#slideshow > div:first')
+  .fadeOut(2000)
+  .next()
+  .fadeIn(2000)
+  .end()
+  .appendTo('#slideshow');
+},  4000);
 
 // Smooth scrolling for 'Music' link
 $('.music').on('click', function(event){

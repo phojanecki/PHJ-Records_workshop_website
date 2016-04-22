@@ -14,229 +14,236 @@
 </head>
 
 <body>
-  <header id="home" class="sticky">
-      <table class="cart">
-        <tr>
-          <td>
-            <p class="items">Items:</p>
-          </td>
-          <td>
-            <p class="items">Total:</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p><span class="simpleCart_quantity"></span></p>
-          </td>
-          <td>
-            <p><span class="simpleCart_grandTotal"></span></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="javascript:;" class="simpleCart_empty">Empty</a>
-          </td>
-          <td>
-            <a href="checkout.html" class="simpleCart_checkout">Checkout</a>
-          </td>
-        </tr>
-      </table>
-   <div class="grid-container">
-      <div id="main-logo" class="col-3"><a href="../index.html"><img src="../images/logo.png" alt="PHJ Records logo" /></a></div>
-      <nav id="menu" class="col-9">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#news">News</a></li>
-          <li><a href="../index.html#artists">Artists</a></li>
-          <li><a href="../index.html#releases">Releases</a></li>
-          <li><a href="videos.html">Videos</a></li>
-          <li><a href="../index.html#events">Events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-  </div>
-  </header>
+  <div class="wrapper">
+    <header id="home" class="sticky">
+        <table class="cart">
+          <tr>
+            <td>
+              <p class="items">Items:</p>
+            </td>
+            <td>
+              <p class="items">Total:</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span class="simpleCart_quantity"></span></p>
+            </td>
+            <td>
+              <p><span class="simpleCart_total"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="javascript:;" class="simpleCart_empty">Empty</a>
+            </td>
+            <td>
+              <a href="checkout.html" class="simpleCart_checkout">Checkout</a>
+            </td>
+          </tr>
+        </table>
+     <div class="grid-container">
+        <nav class="col-8 main-navigation">
+          <div id="hamburger"></div>
+          <ul id="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#news">News</a></li>
+            <li><a href="../index.html#artists">Artists</a></li>
+            <li><a href="../index.html#releases">Releases</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="../index.html#events">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="main-logo" class="col-3">
+          <a href="../index.html">
+            <img src="../images/logo.png" alt="PHJ Records logo" />
+          </a>
+        </div>
+    </div>
+    </header>
 
   <!-- Spacer is necessary to have 'Section News' visible.
   Otherwise it will hide behind the header. -->
   <div id="spacer"></div>
 
-<!-- Section Checkout -->
-<section id="checkout">
-  <div class="grid-container">
-    <p class="section-name">Products</p>
-    <div class="row">
-      <div class="col-9">
-        <h2>List:</h2>
-        <div class="simpleCart_items"></div>
+  <!-- Section Checkout -->
+  <section id="checkout">
+    <div class="grid-container">
+      <p class="section-name">Products</p>
+      <div class="row">
+        <div class="col-9">
+          <h2>List:</h2>
+          <div class="simpleCart_items"></div>
+        </div>
+        <div class="col-3">
+          <h2>Additional costs:</h2>
+          <p>Shipping: <span class="simpleCart_shipping"></span></p>
+          <p>Tax: <span class="simpleCart_tax"></span></p>
+          <h2>Total cost: <span class="simpleCart_grandTotal"></span></h2>
+          <a href="javascript:;" class="simpleCart_empty">Empty</a>
+          <a class="show-shipping-address">Buy</a>
+        </div>
       </div>
-      <div class="col-3">
-        <h2>Additional costs:</h2>
-        <p>Shipping: <span class="simpleCart_shipping"></span></p>
-        <p>Tax: <span class="simpleCart_tax"></span></p>
-        <h2>Total cost: <span class="simpleCart_grandTotal"></span></h2>
-        <a href="javascript:;" class="simpleCart_empty">Empty</a>
-        <a class="show-shipping-address">Buy</a>
+      <div class="row shipping-address">
+        <p class="section-name">Shipping address</p>
+        <div class="col-12 form-box">
+          <form id="delivery-form" method="post">
+            <label>
+              <span>Full name:<span class="asterix">*</span></span>
+              <input id='name' type="text" name="Full name" placeholder="Type your full name" required/>
+            </label>
+            <label>
+              <span>Company:<span class="asterix"></span></span>
+              <input id='company' type="text" name="Company"  placeholder="Type a company name (optional)" />
+            </label>
+            <label>
+              <span>Street name:<span class="asterix">*</span></span>
+              <input id='street' type="text" name="Street name"  placeholder="Type your street name" required />
+            </label>
+            <label>
+              <span>City:<span class="asterix">*</span></span>
+              <input id='city' type="text" name="City"  placeholder="Type your city" required />
+            </label>
+            <label>
+              <span>Postal Code:<span class="asterix">*</span></span>
+              <input id='post' type="text" name="Postal Code"  placeholder="Type your postal code" required />
+            </label>
+            <label>
+              <span>E-mail:<span class="asterix">*</span></span>
+              <input id='email' type="email" name="E-mail"  placeholder="Type your e-mail address" required />
+            </label>
+            <label>
+              <span>Tel. number:<span class="asterix">*</span></span>
+              <input id='tel' type="tel" name="Tel. number"  placeholder="Type your telephone number" required />
+            </label>
+            <label>
+              <span class="comment-box">Comments</span>
+              <textarea id='comment-box' name='Comment' placeholder="Include additional comments (optional)"></textarea>
+            </label>
+            <span class="asterix obligatory">*obligatory fields</span>
+            <label>
+              <input id="submit" class="simpleCart_checkout" href="javascript:;" value="Buy now" type="submit"/>
+            </label>
+          </form>
+        </div>
       </div>
     </div>
-    <div class="row shipping-address">
-      <p class="section-name">Shipping address</p>
-      <div class="col-12 form-box">
-        <form id="delivery-form" method="post">
-          <label>
-            <span>Full name:<span class="asterix">*</span></span>
-            <input id='name' type="text" name="Full name" required/>
-          </label>
-          <label>
-            <span>Company:<span class="asterix"></span></span>
-            <input id='company' type="text" name="Company" />
-          </label>
-          <label>
-            <span>Street name:<span class="asterix">*</span></span>
-            <input id='street' type="text" name="Street name" required />
-          </label>
-          <label>
-            <span>City:<span class="asterix">*</span></span>
-            <input id='city' type="text" name="City" required />
-          </label>
-          <label>
-            <span>Postal Code:<span class="asterix">*</span></span>
-            <input id='post' type="text" name="Postal Code" required />
-          </label>
-          <label>
-            <span>E-mail:<span class="asterix">*</span></span>
-            <input id='email' type="email" name="E-mail" required />
-          </label>
-          <label>
-            <span>Tel. number:<span class="asterix">*</span></span>
-            <input id='tel' type="tel" name="Tel. number" required />
-          </label>
-          <label>
-            <span class="comment-box">Comments</span>
-            <textarea id='comment-box' name='Comment'></textarea>
-          </label>
-          <span class="asterix obligatory">*obligatory fields</span>
-          <label>
-            <input id="submit" class="simpleCart_checkout" href="javascript:;" value="Buy now" type="submit"/>
-          </label>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<!-- Section Releases -->
-<section id="releases">
-  <div class="grid-container">
-    <p class="section-name">You might also be interested in</p>
-    <p class="content">
-      Ut id porttitor justo. Quisque a lorem justo. In sollicitudin erat vitae aliquam consectetur. Phasellus maximus aliquet eros quis vestibulum.
-      Nam feugiat tortor a dolor dapibus, et mollis arcu posuere. Ut metus neque, aliquam non hendrerit fringilla, volutpat sit amet dui.
-      Nullam consequat ipsum nulla, et aliquam nisl consequat quis. Mauris in efficitur ante. Proin hendrerit ante nec neque gravida feugiat.
-    </p>
-    <div class="row">
-      <div class="col-4 release">
-        <h6>Wiz Khalifa</h6>
-        <p>Khalifa</p>
+  <!-- Section Releases -->
+  <section id="releases">
+    <div class="grid-container">
+      <p class="section-name">You might also be interested in</p>
+      <p class="content">
+        Ut id porttitor justo. Quisque a lorem justo. In sollicitudin erat vitae aliquam consectetur. Phasellus maximus aliquet eros quis vestibulum.
+        Nam feugiat tortor a dolor dapibus, et mollis arcu posuere. Ut metus neque, aliquam non hendrerit fringilla, volutpat sit amet dui.
+        Nullam consequat ipsum nulla, et aliquam nisl consequat quis. Mauris in efficitur ante. Proin hendrerit ante nec neque gravida feugiat.
+      </p>
+      <div class="row">
+        <div class="col-4 release">
+          <h6>Wiz Khalifa</h6>
+          <p>Khalifa</p>
+            <div class="album-container">
+              <img src="../images/releases/khalifa_album.jpg" alt="Khalifa album" />
+              <p class="more-info"><a href="../pages/albums/khalifa_album.html">More information</a></p>
+            </div>
+        </div>
+        <div class="col-4 release">
+            <h6>Jack Ü</h6>
+            <p>Skrillex and Diplo Present Jack Ü</p>
           <div class="album-container">
-            <img src="../images/releases/khalifa_album.jpg" alt="Khalifa album" />
-            <p class="more-info"><a href="../pages/albums/khalifa_album.html">More information</a></p>
+            <img src="../images/releases/jack-u_album.jpg" alt="Skrillex and Diplo Present Jack Ü album"/>
+            <p class="more-info"><a href="../pages/albums/jack-u_album.html">More information</a></p>
           </div>
-      </div>
-      <div class="col-4 release">
-          <h6>Jack Ü</h6>
-          <p>Skrillex and Diplo Present Jack Ü</p>
-        <div class="album-container">
-          <img src="../images/releases/jack-u_album.jpg" alt="Skrillex and Diplo Present Jack Ü album"/>
-          <p class="more-info"><a href="../pages/albums/jack-u_album.html">More information</a></p>
         </div>
-      </div>
-      <div class="col-4 release">
-        <h6>The 1975</h6>
-        <p>ILIWYSFYASBYSUOI</p>
-        <div class="album-container">
-          <img src="../images/releases/iliwysfyasbysuoi_album.jpg" alt="ILIWYSFYASBYSUOI album"/>
-          <p class="more-info"><a href="../pages/albums/the-1975_album.html">More information</a></p>
+        <div class="col-4 release">
+          <h6>The 1975</h6>
+          <p>ILIWYSFYASBYSUOI</p>
+          <div class="album-container">
+            <img src="../images/releases/iliwysfyasbysuoi_album.jpg" alt="ILIWYSFYASBYSUOI album"/>
+            <p class="more-info"><a href="../pages/albums/the-1975_album.html">More information</a></p>
+          </div>
         </div>
-      </div>
-      <div class="col-4 release">
-        <h6>Years &amp; Years</h6>
-        <p>Communion</p>
-        <div class="album-container">
-          <img src="../images/releases/communion_album.jpg" alt="Communion"/>
-          <p class="more-info"><a href="../pages/albums/years-and-years_album.html">More information</a></p>
+        <div class="col-4 release">
+          <h6>Years &amp; Years</h6>
+          <p>Communion</p>
+          <div class="album-container">
+            <img src="../images/releases/communion_album.jpg" alt="Communion"/>
+            <p class="more-info"><a href="../pages/albums/years-and-years_album.html">More information</a></p>
+          </div>
         </div>
-      </div>
-      <div class="col-4 release">
-        <h6>Coldplay</h6>
-        <p>A Head Full Of Dreams</p>
-        <div class="album-container">
-          <img src="../images/releases/a-head-full-of-dreams_album.jpg" alt="A Head Full Of Dreams album"/>
-          <p class="more-info"><a href="../pages/albums/coldplay_album.html">More information</a></p>
+        <div class="col-4 release">
+          <h6>Coldplay</h6>
+          <p>A Head Full Of Dreams</p>
+          <div class="album-container">
+            <img src="../images/releases/a-head-full-of-dreams_album.jpg" alt="A Head Full Of Dreams album"/>
+            <p class="more-info"><a href="../pages/albums/coldplay_album.html">More information</a></p>
+          </div>
         </div>
-      </div>
-      <div class="col-4 release">
-        <h6>The Weeknd</h6>
-        <p>Beauty Behind The Madness</p>
-        <div class="album-container">
-          <img src="../images/releases/beauty-behind-the-madness_album.jpg" alt="Beauty Behind The Madness" />
-          <p class="more-info"><a href="../pages/albums/the-weeknd_album.html">More information</a></p>
+        <div class="col-4 release">
+          <h6>The Weeknd</h6>
+          <p>Beauty Behind The Madness</p>
+          <div class="album-container">
+            <img src="../images/releases/beauty-behind-the-madness_album.jpg" alt="Beauty Behind The Madness" />
+            <p class="more-info"><a href="../pages/albums/the-weeknd_album.html">More information</a></p>
+          </div>
         </div>
-      </div>
-      <div class="col-4 release">
-        <h6>Tyga</h6>
-        <p>Hotel California</p>
-        <div class="album-container">
-          <img src="../images/releases/hotel-california_album.jpg" alt="Hotel California"/>
-          <p class="more-info"><a href="../pages/albums/tyga_album.html">More information</a></p>
+        <div class="col-4 release">
+          <h6>Tyga</h6>
+          <p>Hotel California</p>
+          <div class="album-container">
+            <img src="../images/releases/hotel-california_album.jpg" alt="Hotel California"/>
+            <p class="more-info"><a href="../pages/albums/tyga_album.html">More information</a></p>
+          </div>
         </div>
-      </div>
-      <div class="col-4 release">
-        <h6>Major Lazer</h6>
-        <p>Peace Is The Mission</p>
-        <div class="album-container">
-          <img src="../images/releases/peace-is-the-mission_album.jpg" alt="Peace Is The Mission" />
-          <p class="more-info"><a href="../pages/albums/major-lazer_album.html">More information</a></p>
+        <div class="col-4 release">
+          <h6>Major Lazer</h6>
+          <p>Peace Is The Mission</p>
+          <div class="album-container">
+            <img src="../images/releases/peace-is-the-mission_album.jpg" alt="Peace Is The Mission" />
+            <p class="more-info"><a href="../pages/albums/major-lazer_album.html">More information</a></p>
+          </div>
         </div>
-      </div>
-      <div class="col-4 release">
-        <h6>Kid Ink</h6>
-        <p>Full Speed</p>
-        <div class="album-container">
-          <img src="../images/releases/full-speed_album.jpg" alt="Full Speed"/>
-          <p class="more-info"><a href="../pages/albums/kid-ink_album.html">More information</a></p>
+        <div class="col-4 release">
+          <h6>Kid Ink</h6>
+          <p>Full Speed</p>
+          <div class="album-container">
+            <img src="../images/releases/full-speed_album.jpg" alt="Full Speed"/>
+            <p class="more-info"><a href="../pages/albums/kid-ink_album.html">More information</a></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Footer -->
-<footer>
-  <div class="grid-container">
-    <div class="row">
-      <div class="col-4 footer-contact">
-        <h2>PHJ Records</h2>
-        <p>StreetName, 00-789 CityName, Poland</p>
-        <p>tel. (12) 345 67 89</p>
-        <p>mob. 123 456 789</p>
-        <i class="icon-mail"></i>
-        <a href="mailto:pawel.ho.janecki@gmail.com"><span class="email">pawel.ho.janecki@gmail.com</span></a>
-      </div>
-      <div class="col-4 footer-contact">
-        <a href="../index.html"><img src="../images/logo.png" alt="PHJ Records logo"/></a>
-      </div>
-      <div class="col-4 footer-contact">
-        <a href="https://www.linkedin.com/profile/preview?locale=pl_PL&trk=prof-0-sb-preview-primary-button" target="_blank"><i class="icon-linkedin-squared"></i></a>
-        <a href="https://www.facebook.com/phojanecki" target="_blank"><i class="icon-facebook-squared"></i></a>
-        <a href="https://plus.google.com/" target="_blank"><i class="icon-gplus-squared"></i></a>
-        <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-squared"></i></a>
-        <a href="https://www.twitter.com/" target="_blank"><i class="icon-twitter-squared"></i></a>
-        <a href="https://www.spotify.com/" target="_blank"><i class="icon-spotify"></i></a>
+  <!-- Footer -->
+  <footer>
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-4 footer-contact">
+          <h2>PHJ Records</h2>
+          <p>StreetName, 00-789 CityName, Poland</p>
+          <p>tel. (12) 345 67 89</p>
+          <p>mob. 123 456 789</p>
+          <i class="icon-mail"></i>
+          <a href="mailto:pawel.ho.janecki@gmail.com"><span class="email">pawel.ho.janecki@gmail.com</span></a>
+        </div>
+        <div class="col-4 footer-contact">
+          <a href="../index.html"><img src="../images/logo.png" alt="PHJ Records logo"/></a>
+        </div>
+        <div class="col-4 footer-contact">
+          <a href="https://www.linkedin.com/profile/preview?locale=pl_PL&trk=prof-0-sb-preview-primary-button" target="_blank"><i class="icon-linkedin-squared"></i></a>
+          <a href="https://www.facebook.com/phojanecki" target="_blank"><i class="icon-facebook-squared"></i></a>
+          <a href="https://plus.google.com/" target="_blank"><i class="icon-gplus-squared"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-squared"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="icon-twitter-squared"></i></a>
+          <a href="https://www.spotify.com/" target="_blank"><i class="icon-spotify"></i></a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+</div>
 </body>
 
 </html>

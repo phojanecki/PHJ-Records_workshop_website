@@ -15,6 +15,48 @@ $test-border: 1px solid red;
 // @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 // @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
+$p-font-sizes: (
+  null  : 13px,
+  480px : 14px,
+  640px : 15px,
+  1024px: 16px
+);
+
+$li-font-sizes: (
+  null  : 13px,
+  480px : 14px,
+  640px : 15px,
+  1024px: 16px
+);
+
+$h1-font-sizes: (
+  null  : 28px,
+  480px : 31px,
+  640px : 33px,
+  1024px: 36px
+);
+
+$h3-font-sizes: (
+  null  : 24px,
+  480px : 27px,
+  640px : 29px,
+  1024px: 32px
+);
+
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    }
+    @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 820px) {
   #hamburger {
     display: block !important;
@@ -47,6 +89,12 @@ $test-border: 1px solid red;
   .cart {
     top: 6rem !important;
     right: 0.5rem !important;
+  }
+  .content {
+    width: 90% !important;
+  }
+  .artist {
+    height: 15rem !important;
   }
 }
 
@@ -82,5 +130,8 @@ $test-border: 1px solid red;
   }
   .wrapper.open {
     transform: translateX(20%);
+  }
+  .artist {
+    height: 10rem !important;
   }
 }

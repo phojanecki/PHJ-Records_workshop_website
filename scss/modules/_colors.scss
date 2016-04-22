@@ -17,9 +17,10 @@ body {
     border-bottom: 1px solid white;
   }
   .content {
-    width: 100%;
+    width: 50%;
     margin: 1rem;
     text-align: justify;
+    @include font-size($p-font-sizes);
   }
   .text-box {
     padding: 0;
@@ -33,9 +34,9 @@ body {
 .sticky {
   position: fixed;
   z-index: 999;
-  // left: 0;
-  // top: 0;
-  // right: 0;
+  left: 0;
+  top: 0;
+  right: 0;
   -webkit-transform: translate3d(0, 0, 0);
   /*Chrome cannot render position:fixed on elements under a transformation.*/
   }
@@ -48,10 +49,10 @@ body {
    border-bottom: 3px solid #c92121;
    .cart {
      position: fixed;
-     top: 0.5rem;
-     right: 0.5rem;
+    //  top: 0.5rem;
+     right: 0.25rem;
      width: 11rem;
-     height: 4.5rem;
+     height: 5rem;
      border-radius: 5px;
      text-align: center;
      background: rgba(237,38,38,1);
@@ -69,6 +70,7 @@ body {
        margin: 0;
        word-spacing: 5px;
        font-size: 0.9rem;
+       @include font-size($p-font-sizes);
        .simpleCart_quantity, .simpleCart_grandTotal {
          font-weight: bold;
        }
@@ -185,6 +187,7 @@ Otherwise it will hide behind the header.*/
 // Section Welcome
 #welcome {
   h1 {
+    @include font-size($h1-font-sizes);
     text-align: center;
     font-size: 3rem;
   }

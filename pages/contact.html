@@ -14,173 +14,180 @@
 </head>
 
 <body>
-  <header id="home" class="sticky">
-      <table class="cart">
-        <tr>
-          <td>
-            <p class="items">Items:</p>
-          </td>
-          <td>
-            <p class="items">Total:</p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p><span class="simpleCart_quantity"></span></p>
-          </td>
-          <td>
-            <p><span class="simpleCart_grandTotal"></span></p>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="javascript:;" class="simpleCart_empty">Empty</a>
-          </td>
-          <td>
-            <a href="checkout.html" class="simpleCart_checkout">Checkout</a>
-          </td>
-        </tr>
-      </table>
-   <div class="grid-container">
-      <div id="main-logo" class="col-3"><a href="../index.html"><img src="../images/logo.png" alt="PHJ Records logo" /></a></div>
-      <nav id="menu" class="col-9">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#news">News</a></li>
-          <li><a href="../index.html#artists">Artists</a></li>
-          <li><a href="../index.html#releases">Releases</a></li>
-          <li><a href="videos.html">Videos</a></li>
-          <li><a href="../index.html#events">Events</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-  </div>
-  </header>
+  <div class="wrapper">
+    <header id="home" class="sticky">
+        <table class="cart">
+          <tr>
+            <td>
+              <p class="items">Items:</p>
+            </td>
+            <td>
+              <p class="items">Total:</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p><span class="simpleCart_quantity"></span></p>
+            </td>
+            <td>
+              <p><span class="simpleCart_total"></span></p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="javascript:;" class="simpleCart_empty">Empty</a>
+            </td>
+            <td>
+              <a href="checkout.html" class="simpleCart_checkout">Checkout</a>
+            </td>
+          </tr>
+        </table>
+     <div class="grid-container">
+        <nav class="col-8 main-navigation">
+          <div id="hamburger"></div>
+          <ul id="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#news">News</a></li>
+            <li><a href="../index.html#artists">Artists</a></li>
+            <li><a href="../index.html#releases">Releases</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="../index.html#events">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="main-logo" class="col-3">
+          <a href="../index.html">
+            <img src="../images/logo.png" alt="PHJ Records logo" />
+          </a>
+        </div>
+    </div>
+    </header>
 
   <!-- Spacer is necessary to have 'Section News' visible.
   Otherwise it will hide behind the header. -->
   <div id="spacer"></div>
 
-<!-- Section Checkout -->
-<section id="contact">
-  <div class="grid-container">
-    <p class="section-name">Contact us</p>
-    <div class="row">
-      <div class="col-9">
-        <h3>
-          If you want to share anything with us please use the form below.
-          <br />
-          Your comments and feedback will be much appreciated!
-        </h3>
-        <form id="contact-form" method="post">
-          <label>
-            <span>Full name:<span class="asterix">*</span></span>
-            <input id='name' type="text" name="Full name" required />
-          </label>
-          <label>
-            <span>E-mail:<span class="asterix">*</span></span>
-            <input id='email' type="email" name="E-mail" required />
-          </label>
-          <label>
-            <span>Tel. number:</span>
-            <input id='tel' type="tel" name="Tel. number" />
-          </label>
-          <label>
-            <span>Message<span class="asterix">*</span></span>
-            <textarea id='message-box' name='message'></textarea>
-          </label>
-          <label>
-            <span class="asterix obligatory">*obligatory fields</span>
-            <input id="submit" class="" href="mailto:pawel.ho.janecki@gmail.com" type="submit" value="Send">
-          </label>
-        </form>
-      </div>
+  <!-- Section Checkout -->
+  <section id="contact">
+    <div class="grid-container">
+      <p class="section-name">Contact us</p>
+      <div class="row">
+        <div class="col-9">
+          <h3>
+            If you want to share anything with us please use the form below.
+            <br />
+            Your comments and feedback will be much appreciated!
+          </h3>
+          <form id="contact-form" method="post">
+            <label>
+              <span>Full name:<span class="asterix">*</span></span>
+              <input id='name' type="text" name="Full name" placeholder="Type your full name" required />
+            </label>
+            <label>
+              <span>E-mail:<span class="asterix">*</span></span>
+              <input id='email' type="email" name="E-mail" placeholder="Type your e-mail address" required />
+            </label>
+            <label>
+              <span>Tel. number:</span>
+              <input id='tel' type="tel" name="Tel. number" placeholder="Type your telephone number (optional)"  />
+            </label>
+            <label>
+              <span>Message<span class="asterix">*</span></span>
+              <textarea id='message-box' name='message' placeholder="Write to us"></textarea>
+            </label>
+            <label>
+              <span class="asterix obligatory">*obligatory fields</span>
+              <input id="submit" class="" href="mailto:pawel.ho.janecki@gmail.com" type="submit" value="Send">
+            </label>
+          </form>
+        </div>
 
-    <!-- Check out our music   -->
-      <div class="col-3" id="check-music">
-        <h3>Check new releases:</h3>
-        <div class="row">
-          <div class="col-1 artist">
-            <img src="../images/artists/coldplay.jpg" alt="Coldplay"/>
-              <div class="hover">
-                <div class="media-container">
-                  <h1><a href="albums/coldplay_album.html">Coldplay</h1>
+      <!-- Check out our music   -->
+        <div class="col-3" id="check-music">
+          <h3>Check new releases:</h3>
+          <div class="row">
+            <div class="col-1 artist">
+              <img src="../images/artists/coldplay.jpg" alt="Coldplay"/>
+                <div class="hover">
+                  <div class="media-container">
+                    <h1><a href="albums/coldplay_album.html">Coldplay</h1>
+                  </div>
                 </div>
-              </div>
-          </div>
-          <div class="col-1 artist">
-            <img src="../images/artists/major-lazer.jpg" alt="Major Lazer"/>
-              <div class="media-container">
-                <h1><a href="albums/major-lazer_album.html">Major Lazer</a></h1>
-              </div>
-          </div>
-          <div class="col-1 artist">
-            <img src="../images/releases/communion_album.jpg" alt="Communion"/>
-              <div class="media-container">
-                <h1><a href="albums/years-and-years_album.html">Years &amp; Years</a></h1>
-              </div>
-          </div>
-      </div>
-    </div>
-
-    <!-- Check out videos   -->
-      <div class="col-3" id="check-music">
-        <h3>Check videos:</h3>
-        <div class="row">
-          <div class="col-1 artist">
-            <img src="../videos/kid-ink/kid-ink_1.gif" alt="Kid Ink gif"/>
-              <div class="hover">
+            </div>
+            <div class="col-1 artist">
+              <img src="../images/artists/major-lazer.jpg" alt="Major Lazer"/>
                 <div class="media-container">
-                  <h1><a href="videos.html#kid-ink">Kid Ink</h1>
+                  <h1><a href="albums/major-lazer_album.html">Major Lazer</a></h1>
                 </div>
-              </div>
-          </div>
-          <div class="col-1 artist">
-            <img src="../videos/tyga/tyga_2.gif" alt="Tyga gif"/>
-              <div class="media-container">
-                <h1><a href="videos.html#tyga">Tyga</a></h1>
-              </div>
-          </div>
-          <div class="col-1 artist">
-            <img src="../videos/the-1975/the-1975_3.gif" alt="The 1975 gif"/>
-              <div class="media-container">
-                <h1><a href="videos.html#the-1975">The 1975</a></h1>
-              </div>
-          </div>
+            </div>
+            <div class="col-1 artist">
+              <img src="../images/releases/communion_album.jpg" alt="Communion"/>
+                <div class="media-container">
+                  <h1><a href="albums/years-and-years_album.html">Years &amp; Years</a></h1>
+                </div>
+            </div>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-12 spacer"></div>
-    </div>
-  </div>
-</section>
 
-<!-- Footer -->
-<footer>
-  <div class="grid-container">
-    <div class="row">
-      <div class="col-4 footer-contact">
-        <h2>PHJ Records</h2>
-        <p>StreetName, 00-789 CityName, Poland</p>
-        <p>tel. (12) 345 67 89</p>
-        <p>mob. 123 456 789</p>
-        <i class="icon-mail"></i>
-        <a href="mailto:pawel.ho.janecki@gmail.com"><span class="email">pawel.ho.janecki@gmail.com</span></a>
+      <!-- Check out videos   -->
+        <div class="col-3" id="check-music">
+          <h3>Check videos:</h3>
+          <div class="row">
+            <div class="col-1 artist">
+              <img src="../videos/kid-ink/kid-ink_1.gif" alt="Kid Ink gif"/>
+                <div class="hover">
+                  <div class="media-container">
+                    <h1><a href="videos.html#kid-ink">Kid Ink</h1>
+                  </div>
+                </div>
+            </div>
+            <div class="col-1 artist">
+              <img src="../videos/tyga/tyga_2.gif" alt="Tyga gif"/>
+                <div class="media-container">
+                  <h1><a href="videos.html#tyga">Tyga</a></h1>
+                </div>
+            </div>
+            <div class="col-1 artist">
+              <img src="../videos/the-1975/the-1975_3.gif" alt="The 1975 gif"/>
+                <div class="media-container">
+                  <h1><a href="videos.html#the-1975">The 1975</a></h1>
+                </div>
+            </div>
+        </div>
       </div>
-      <div class="col-4 footer-contact">
-        <a href="../index.html"><img src="../images/logo.png" alt="PHJ Records logo"/></a>
-      </div>
-      <div class="col-4 footer-contact">
-        <a href="https://www.linkedin.com/profile/preview?locale=pl_PL&trk=prof-0-sb-preview-primary-button" target="_blank"><i class="icon-linkedin-squared"></i></a>
-        <a href="https://www.facebook.com/phojanecki" target="_blank"><i class="icon-facebook-squared"></i></a>
-        <a href="https://plus.google.com/" target="_blank"><i class="icon-gplus-squared"></i></a>
-        <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-squared"></i></a>
-        <a href="https://www.twitter.com/" target="_blank"><i class="icon-twitter-squared"></i></a>
-        <a href="https://www.spotify.com/" target="_blank"><i class="icon-spotify"></i></a>
+      <div class="row">
+        <div class="col-12 spacer"></div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-4 footer-contact">
+          <h2>PHJ Records</h2>
+          <p>StreetName, 00-789 CityName, Poland</p>
+          <p>tel. (12) 345 67 89</p>
+          <p>mob. 123 456 789</p>
+          <i class="icon-mail"></i>
+          <a href="mailto:pawel.ho.janecki@gmail.com"><span class="email">pawel.ho.janecki@gmail.com</span></a>
+        </div>
+        <div class="col-4 footer-contact">
+          <a href="../index.html"><img src="../images/logo.png" alt="PHJ Records logo"/></a>
+        </div>
+        <div class="col-4 footer-contact">
+          <a href="https://www.linkedin.com/profile/preview?locale=pl_PL&trk=prof-0-sb-preview-primary-button" target="_blank"><i class="icon-linkedin-squared"></i></a>
+          <a href="https://www.facebook.com/phojanecki" target="_blank"><i class="icon-facebook-squared"></i></a>
+          <a href="https://plus.google.com/" target="_blank"><i class="icon-gplus-squared"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-squared"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="icon-twitter-squared"></i></a>
+          <a href="https://www.spotify.com/" target="_blank"><i class="icon-spotify"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
 </body>
 
 </html>
