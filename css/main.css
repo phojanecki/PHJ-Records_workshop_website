@@ -110,19 +110,71 @@ table {
   width: 100%;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
   #hamburger {
     display: block !important;
+    left: 14.5rem;
   }
   #menu {
-    display: none;
+    height: 1000vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
   }
   #menu li {
     width: 10rem;
-    padding: 1rem 0 1rem 0;
+    margin: 1rem 1.5rem 1rem 1.5rem;
     display: block !important;
     float: none !important;
     text-align: center;
+    border-bottom: 1px solid #c92121;
+  }
+  .wrapper {
+    transform: translateX(0);
+    transition: all 0.6s ease;
+  }
+  .wrapper.open {
+    transform: translateX(25%);
+  }
+  .cart {
+    top: 6rem !important;
+    right: 0.5rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #hamburger {
+    display: block !important;
+    left: 1.5rem;
+  }
+  #menu {
+    height: 1000vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    margin: 0;
+    padding: 0;
+  }
+  #menu li {
+    width: 5rem;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    display: block !important;
+    float: none !important;
+    text-align: center;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #c92121;
+  }
+  #menu li:first-child {
+    margin-top: 0.8rem;
+  }
+  .wrapper {
+    transform: translateX(0);
+    transition: all 0.6s ease;
+  }
+  .wrapper.open {
+    transform: translateX(20%);
   }
 }
 
@@ -145,11 +197,13 @@ body a:visited {
 body .section-name {
   width: 50%;
   font-size: 2rem;
+  margin: 1rem;
   border-bottom: 1px solid white;
 }
 
 body .content {
   width: 100%;
+  margin: 1rem;
   text-align: justify;
 }
 
@@ -157,12 +211,13 @@ body .text-box {
   padding: 0;
 }
 
+body .main-row {
+  margin: 1rem;
+}
+
 .sticky {
   position: fixed;
   z-index: 999;
-  left: 0;
-  top: 0;
-  right: 0;
   -webkit-transform: translate3d(0, 0, 0);
   /*Chrome cannot render position:fixed on elements under a transformation.*/
 }
@@ -175,7 +230,7 @@ header {
 }
 
 header .cart {
-  position: absolute;
+  position: fixed;
   top: 0.5rem;
   right: 0.5rem;
   width: 11rem;
@@ -248,28 +303,36 @@ header .cart .simpleCart_checkout {
   margin: 0 auto;
 }
 
-/* Logo doesn't align to the middle when resizing the window */
-#main-logo {
-  padding: 0.25rem 0 0 0;
+#home {
+  /* Logo doesn't align to the middle when resizing the window */
 }
 
-#main-logo img {
-  width: 60%;
+#home .main-navigation {
+  padding-top: 1.5rem;
+}
+
+#home #main-logo {
+  padding: 0.3rem 1rem 0 0;
+}
+
+#home #main-logo img {
+  width: 11rem;
   height: 30%;
+  float: right;
 }
 
-#hamburger {
+#home #hamburger {
   display: none;
   position: fixed;
   top: 1.5rem;
-  right: 1.5rem;
+  left: 1.5rem;
   width: 2.5rem;
   height: 2rem;
   cursor: pointer;
   background-color: black;
 }
 
-#hamburger:before {
+#home #hamburger:before {
   content: "";
   position: absolute;
   left: 0;
@@ -280,14 +343,15 @@ header .cart .simpleCart_checkout {
   box-shadow: 0 0.6rem 0 0 white, 0 1.2rem 0 0 white;
 }
 
-#menu {
-  margin-top: 1.5rem;
+#home #menu {
+  padding-top: 1rem;
   padding: 0;
-  float: right;
+  float: left;
   list-style-type: none;
+  background-color: black;
 }
 
-#menu li {
+#home #menu li {
   display: inline-block;
   float: left;
   padding: 10px;
@@ -295,12 +359,12 @@ header .cart .simpleCart_checkout {
   background-color: black;
 }
 
-#menu li:first-child {
+#home #menu li:first-child {
   background-color: #c92121;
   border-radius: 2px;
 }
 
-#menu li:hover {
+#home #menu li:hover {
   background-color: #c92121;
   border-radius: 2px;
 }
