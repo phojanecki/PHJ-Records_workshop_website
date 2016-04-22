@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Fake record label website called PHJ Records">
     <meta name="keywords" content="HTML,CSS,JavaScript,jQuery,record,label,fake">
+    <meta name="vieport" content="initial-scale=1" />
     <title>PHJ Records</title>
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
     <link href="icons/css/fontello.css" rel="stylesheet" type="text/css" />
@@ -18,15 +19,16 @@
    <div class="grid-container">
     <div class="row">
       <div id="main-logo" class="col-3"><a href="index.html"><img src="images/logo.png" alt="PHJ Records logo" /></a></div>
-      <nav id="menu" class="col-9">
-        <ul>
-          <li><a href="#news" class="inner-link">Home</a></li>
-          <li><a href="#news" class="inner-link">News</a></li>
-          <li><a href="#artists" class="inner-link">Artists</a></li>
-          <li><a href="#releases" class="inner-link">Releases</a></li>
-          <li><a href="#videos" class="inner-link">Videos</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
+      <nav>
+        <div id="hamburger"></div>
+        <ul id="menu">
+          <li class=""><a href="#news" class="inner-link">Home</a></li>
+          <li class=""><a href="#news" class="inner-link">News</a></li>
+          <li class=""><a href="#artists" class="inner-link">Artists</a></li>
+          <li class=""><a href="#releases" class="inner-link">Releases</a></li>
+          <li class=""><a href="#videos" class="inner-link">Videos</a></li>
+          <li class=""><a href="#events" class="inner-link">Events</a></li>
+          <li class=""><a href="pages/contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -49,7 +51,7 @@ Otherwise it will hide behind the header. -->
     </h3>
     <div class="row">
       <div class="col-12">
-        <p>
+        <p class="content">
           <br />
           <br />
           Sed eget viverra nulla. Nam dictum sollicitudin est, ac tempus purus euismod ut. Vivamus a auctor velit, non dictum ante.
@@ -109,14 +111,18 @@ Otherwise it will hide behind the header. -->
   <section id="artists">
     <div class="grid-container">
       <p class="section-name">Artists</p>
-      <p class="content">
-        Sed feugiat risus orci, a dapibus urna laoreet at. Praesent nunc elit, consectetur non ipsum sed, imperdiet venenatis magna.
-        Nam auctor enim sed semper porta. Sed vehicula lobortis massa, ut tincidunt ipsum faucibus vitae. Vestibulum tempus consectetur purus, pellentesque pellentesque ligula ultricies et.
-        <br />
-        <br />
-        Nunc ac porta nibh. Nunc vitae purus sed lacus scelerisque eleifend. Proin non sagittis dolor, sollicitudin sagittis mi. Vestibulum mollis feugiat sapien, non dapibus leo elementum aliquet.
-        Sed sagittis dolor eget orci lacinia tincidunt. Donec eu finibus odio. Quisque finibus mauris eu molestie volutpat. Fusce congue eu erat sit amet porttitor.
-      </p>
+      <div class="row">
+        <div class="col-6 text-box">
+          <p class="content">
+            Sed feugiat risus orci, a dapibus urna laoreet at. Praesent nunc elit, consectetur non ipsum sed, imperdiet venenatis magna.
+            Nam auctor enim sed semper porta. Sed vehicula lobortis massa, ut tincidunt ipsum faucibus vitae. Vestibulum tempus consectetur purus, pellentesque pellentesque ligula ultricies et.
+            <br />
+            <br />
+            Nunc ac porta nibh. Nunc vitae purus sed lacus scelerisque eleifend. Proin non sagittis dolor, sollicitudin sagittis mi. Vestibulum mollis feugiat sapien, non dapibus leo elementum aliquet.
+            Sed sagittis dolor eget orci lacinia tincidunt. Donec eu finibus odio. Quisque finibus mauris eu molestie volutpat. Fusce congue eu erat sit amet porttitor.
+          </p>
+      </div>
+      </div>
       <div class="row">
         <div class="col-4 artist">
           <img src="images/artists/wiz-khalifa.jpg" alt="Wiz Khalifa" />
@@ -200,11 +206,15 @@ Otherwise it will hide behind the header. -->
   <section id="releases">
     <div class="grid-container">
       <p class="section-name">Releases</p>
-      <p class="content">
-        Ut id porttitor justo. Quisque a lorem justo. In sollicitudin erat vitae aliquam consectetur. Phasellus maximus aliquet eros quis vestibulum.
-        Nam feugiat tortor a dolor dapibus, et mollis arcu posuere. Ut metus neque, aliquam non hendrerit fringilla, volutpat sit amet dui.
-        Nullam consequat ipsum nulla, et aliquam nisl consequat quis. Mauris in efficitur ante. Proin hendrerit ante nec neque gravida feugiat.
-      </p>
+      <div class="row">
+        <div class="col-6 text-box">
+          <p class="content">
+            Ut id porttitor justo. Quisque a lorem justo. In sollicitudin erat vitae aliquam consectetur. Phasellus maximus aliquet eros quis vestibulum.
+            Nam feugiat tortor a dolor dapibus, et mollis arcu posuere. Ut metus neque, aliquam non hendrerit fringilla, volutpat sit amet dui.
+            Nullam consequat ipsum nulla, et aliquam nisl consequat quis. Mauris in efficitur ante. Proin hendrerit ante nec neque gravida feugiat.
+          </p>
+        </div>
+      </div>
       <div class="row">
         <div class="col-4 release">
           <h6>Wiz Khalifa</h6>
@@ -286,11 +296,15 @@ Otherwise it will hide behind the header. -->
     <section id="videos">
       <div class="grid-container">
         <p class="section-name">Videos</p>
-        <p class="content">
-          Vestibulum ac elit fringilla metus ullamcorper finibus vel sit amet massa. In finibus ultricies nisi, eget tincidunt nisi tristique at.
-          Donec dui diam, ullamcorper id placerat vitae, mollis sed lectus. Nulla facilisi. Donec scelerisque, augue et egestas suscipit, enim arcu interdum lectus, sit amet dignissim arcu nulla et metus.
-          Phasellus tincidunt, lacus a hendrerit cursus, libero mi luctus justo, non faucibus nisi ligula eget lectus. Maecenas consectetur leo at erat fermentum, eget dignissim velit feugiat.
-        </p>
+        <div class="row">
+          <div class="col-6 text-box">
+            <p class="content">
+              Vestibulum ac elit fringilla metus ullamcorper finibus vel sit amet massa. In finibus ultricies nisi, eget tincidunt nisi tristique at.
+              Donec dui diam, ullamcorper id placerat vitae, mollis sed lectus. Nulla facilisi. Donec scelerisque, augue et egestas suscipit, enim arcu interdum lectus, sit amet dignissim arcu nulla et metus.
+              Phasellus tincidunt, lacus a hendrerit cursus, libero mi luctus justo, non faucibus nisi ligula eget lectus. Maecenas consectetur leo at erat fermentum, eget dignissim velit feugiat.
+            </p>
+          </div>
+        </div>
         <div class="row">
           <div class="col-4 gifs">
             <img src="videos/wiz-khalifa/wiz-khalifa_1.gif"/>

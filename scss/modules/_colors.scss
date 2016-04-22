@@ -16,8 +16,11 @@ body {
     border-bottom: 1px solid white;
   }
   .content {
-    width: 50%;
+    width: 100%;
     text-align: justify;
+  }
+  .text-box {
+    padding: 0;
   }
 }
 
@@ -104,7 +107,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-/* Logo isn't aligned to the middle when resizing the window */
+
+/* Logo doesn't align to the middle when resizing the window */
 #main-logo {
   padding: 0.25rem 0 0 0;
   img {
@@ -112,17 +116,42 @@ body {
   height: 30%;
   }
 }
-nav#menu {
-  display: flex;
-  justify-content: flex-end;
-  float:right;
-  list-style-type: none;
+
+// Hamburger menu
+#hamburger {
+  display: none;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 2.5rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: black;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.25em;
+    width: 2.5rem;
+    height: 0.2rem;
+    background: white;
+    box-shadow:
+      0 0.6rem 0 0 white,
+      0 1.2rem 0 0 white;
+  }
+}
+
+#menu {
   margin-top: 1.5rem;
   padding: 0;
+  float:right;
+  list-style-type: none;
   li {
     display: inline-block;
+    float: left;
     padding: 10px;
     font-size: 1rem;
+    background-color: black;
     &:first-child{
       background-color: #c92121;
       border-radius: 2px;

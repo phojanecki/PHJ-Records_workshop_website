@@ -116,9 +116,10 @@
       display: block;
       margin: 1rem;
       #comment-box {
+        float: right;
         width: 70%;
         height: 5rem;
-        margin-left: 3.25rem;
+        // margin-left: 3.25rem;
       }
       .comment-box {
         float: left;
@@ -130,11 +131,15 @@
         font-family: inherit;
         float: right;
       }
+      .obligatory {
+        margin-top: 1rem;
+      }
       #submit {
         width: 50%;
         height: 2rem;
+        margin-top: 1rem;
         padding: 0;
-        float: left;
+        float: right;
       }
     }
   }

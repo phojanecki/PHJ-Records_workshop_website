@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+var $liElements = $('#menu').find('li');
+
+  $('#hamburger').on('click', function (){
+    console.log('dziala');
+    $('#menu').slideToggle(400, function (){
+
+    });
+  });
+
+
 // News slider
   $("#slideshow > div:gt(0)").hide();
   setInterval(function() {

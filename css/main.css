@@ -110,6 +110,22 @@ table {
   width: 100%;
 }
 
+@media screen and (max-width: 700px) {
+  #hamburger {
+    display: block !important;
+  }
+  #menu {
+    display: none;
+  }
+  #menu li {
+    width: 10rem;
+    padding: 1rem 0 1rem 0;
+    display: block !important;
+    float: none !important;
+    text-align: center;
+  }
+}
+
 body {
   background-image: url("../images/binding_dark/binding_dark.png");
   font-family: "Raleway", sans-serif;
@@ -133,8 +149,12 @@ body .section-name {
 }
 
 body .content {
-  width: 50%;
+  width: 100%;
   text-align: justify;
+}
+
+body .text-box {
+  padding: 0;
 }
 
 .sticky {
@@ -228,7 +248,7 @@ header .cart .simpleCart_checkout {
   margin: 0 auto;
 }
 
-/* Logo isn't aligned to the middle when resizing the window */
+/* Logo doesn't align to the middle when resizing the window */
 #main-logo {
   padding: 0.25rem 0 0 0;
 }
@@ -238,27 +258,49 @@ header .cart .simpleCart_checkout {
   height: 30%;
 }
 
-nav#menu {
-  display: flex;
-  justify-content: flex-end;
-  float: right;
-  list-style-type: none;
+#hamburger {
+  display: none;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 2.5rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: black;
+}
+
+#hamburger:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 2.5rem;
+  height: 0.2rem;
+  background: white;
+  box-shadow: 0 0.6rem 0 0 white, 0 1.2rem 0 0 white;
+}
+
+#menu {
   margin-top: 1.5rem;
   padding: 0;
+  float: right;
+  list-style-type: none;
 }
 
-nav#menu li {
+#menu li {
   display: inline-block;
+  float: left;
   padding: 10px;
   font-size: 1rem;
+  background-color: black;
 }
 
-nav#menu li:first-child {
+#menu li:first-child {
   background-color: #c92121;
   border-radius: 2px;
 }
 
-nav#menu li:hover {
+#menu li:hover {
   background-color: #c92121;
   border-radius: 2px;
 }
@@ -592,8 +634,8 @@ footer .footer-contact .icon-mail {
 
 #albums .album .item_add {
   display: inline-block;
+  float: right;
   margin-bottom: 1rem;
-  margin-left: 3.5rem;
   padding: 0.5rem;
   font-size: 1.5rem;
   border-radius: 5px;
@@ -803,9 +845,9 @@ footer .footer-contact .icon-mail {
 }
 
 #checkout .shipping-address #delivery-form label #comment-box {
+  float: right;
   width: 70%;
   height: 5rem;
-  margin-left: 3.25rem;
 }
 
 #checkout .shipping-address #delivery-form label .comment-box {
@@ -820,11 +862,16 @@ footer .footer-contact .icon-mail {
   float: right;
 }
 
+#checkout .shipping-address #delivery-form label .obligatory {
+  margin-top: 1rem;
+}
+
 #checkout .shipping-address #delivery-form label #submit {
   width: 50%;
   height: 2rem;
+  margin-top: 1rem;
   padding: 0;
-  float: left;
+  float: right;
 }
 
 #contact .spacer {
