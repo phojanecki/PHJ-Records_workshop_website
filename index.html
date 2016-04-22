@@ -1,0 +1,366 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fake record label website called PHJ Records">
+    <meta name="keywords" content="HTML,CSS,JavaScript,jQuery,record,label,fake">
+    <meta name="vieport" content="initial-scale=1" />
+    <title>PHJ Records</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="icons/css/fontello.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/simpleCart.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="home" class="sticky">
+     <div class="grid-container">
+      <div class="row">
+        <nav class="col-8 main-navigation">
+          <div id="hamburger"></div>
+          <ul id="menu">
+            <li class=""><a href="#news" class="inner-link">Home</a></li>
+            <li class=""><a href="#news" class="inner-link">News</a></li>
+            <li class=""><a href="#artists" class="inner-link">Artists</a></li>
+            <li class=""><a href="#releases" class="inner-link">Releases</a></li>
+            <li class=""><a href="#videos" class="inner-link">Videos</a></li>
+            <li class=""><a href="#events" class="inner-link">Events</a></li>
+            <li class=""><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="main-logo" class="col-3">
+          <a href="index.html">
+            <img src="images/logo.png" alt="PHJ Records logo" />
+          </a>
+        </div>
+      </div>
+    </div>
+    </header>
+
+  <!-- Spacer is necessary to have 'Section News' visible.
+  Otherwise it will hide behind the header. -->
+  <div id="spacer"></div>
+
+  <!-- Section welcome -->
+  <section id="welcome">
+    <div class="grid-container">
+      <h1>Welcome to <span class="logo">PHJ Records</span>!</h1>
+      <h3>
+        This is a website of the fake record label <span class="logo">PHJ Records</span>.<br />
+        It was created for non commercial purposes in order to practice HTML, CSS, Sass, JavaScript and jQuery skills.<br />
+        All images included in this project were modified in Photoshop CC 2015.<br />
+        Your feedback (both positive and negative) will be very welcome :)<br />
+      </h3>
+    </div>
+  </section>
+
+  <!-- Section News -->
+    <section id="news">
+      <div class="grid-container">
+        <p class="section-name">News</p>
+        <div class="row main-row">
+          <div class="col-12">
+            <div id="slideshow">
+              <div class="news-pictures">
+                <h1>We won't teach you to fly</h1>
+                <p>Instead we'll record your music</p>
+                <img src="images/news/news-concert2.jpg" alt="News 1" />
+              </div>
+              <div class="news-pictures">
+                <h1>The 1975</h1>
+                <p>Check out the new album!</p>
+                <a href="pages/albums/the-1975_album.html"><img src="images/news/news-the1975.jpg" alt="News 2" /></a>
+              </div>
+              <div class="news-pictures">
+                <h1>Wiz Khalifa</h1>
+                <p>"Elevated" video out now</p>
+                <a href="pages/videos.html#wiz-khalifa"><img src="images/news/news-wiz_khalifa.jpg" alt="News 3"/></a>
+              </div>
+              <div class="news-pictures">
+                <h1>Die Antwoord joins PHJ Records</h1>
+                <p>The new album coming soon</p>
+                <img src="images/news/news-die_antwoord.jpg" alt="News 4"/>
+              </div>
+              <div class="news-pictures">
+                <h1>Experience andventure of your lifetime</h1>
+                <p>Contact us now and send us your music</p>
+                <a href="pages/contact.html"><img src="images/news/news-contact_us.jpg" alt="News 5"/></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Section Artists -->
+    <section id="artists">
+      <div class="grid-container">
+        <p class="section-name">Artists</p>
+        <div class="row main-row">
+          <div class="col-12 text-box">
+            <p class="content">
+              Sed feugiat risus orci, a dapibus urna laoreet at. Praesent nunc elit, consectetur non ipsum sed, imperdiet venenatis magna.
+              Nam auctor enim sed semper porta. Sed vehicula lobortis massa, ut tincidunt ipsum faucibus vitae. Vestibulum tempus consectetur purus, pellentesque pellentesque ligula ultricies et.
+              <br />
+              <br />
+              Nunc ac porta nibh. Nunc vitae purus sed lacus scelerisque eleifend. Proin non sagittis dolor, sollicitudin sagittis mi. Vestibulum mollis feugiat sapien, non dapibus leo elementum aliquet.
+              Sed sagittis dolor eget orci lacinia tincidunt. Donec eu finibus odio. Quisque finibus mauris eu molestie volutpat. Fusce congue eu erat sit amet porttitor.
+            </p>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-4 artist">
+            <img src="images/artists/wiz-khalifa.jpg" alt="Wiz Khalifa" />
+              <div class="hover">
+                <div class="media-container">
+                  <h1><a href="http://www.wizkhalifa.com/" target="_blank">Wiz Khalifa</a></h1>
+                  <p><a class="music" href="#releases">Music</a></p>
+                  <p><a class="videos" href="pages/videos.html">Videos</a></p>
+                </div>
+              </div>
+          </div>
+          <div class="col-4 artist">
+            <img src="images/artists/jack-u.jpg" alt="Jack Ü" />
+              <div class="media-container">
+                <h1><a href="http://jackuofficial.com/" target="_blank">Jack Ü</a></h1>
+                <p><a class="music" href="#releases">Music</a></p>
+                <p><a class="videos" href="pages/videos.html">Videos</a></p>
+              </div>
+          </div>
+          <div class="col-4 artist">
+            <img src="images/artists/the-1975.jpg" alt="The 1975" />
+              <div class="media-container">
+                <h1><a href="http://the1975.com/" target="_blank">The 1975</a></h1>
+                <p><a class="music" href="#releases">Music</a></p>
+                <p><a class="videos" href="pages/videos.html">Videos</a></p>
+              </div>
+          </div>
+          <div class="col-4 artist">
+            <img src="images/artists/years-and-years.jpg" alt="Years &amp; Years"/>
+              <div class="media-container">
+                <h1><a href="http://yearsandyearsofficial.com/" target="_blank">Years &amp; Years</a></h1>
+                <p><a class="music" href="#releases">Music</a></p>
+                <p><a class="videos" href="pages/videos.html">Videos</a></p>
+              </div>
+          </div>
+          <div class="col-4 artist">
+            <img src="images/artists/coldplay.jpg" alt="Coldplay"/>
+              <div class="media-container">
+                <h1><a href="http://coldplay.com/" target="_blank">Coldplay</a></h1>
+                <p><a class="music" href="#releases">Music</a></p>
+                <p><a class="videos" href="pages/videos.html">Videos</a></p>
+              </div>
+          </div>
+          <div class="col-4 artist">
+            <img src="images/artists/the-weeknd.jpg" alt="The Weeknd"/>
+              <div class="media-container">
+                <h1><a href="http://www.theweeknd.com/" target="_blank">The Weeknd</a></h1>
+                <p><a class="music" href="#releases">Music</a></p>
+                <p><a class="videos" href="pages/videos.html">Videos</a></p>
+              </div>
+          </div>
+          <div class="col-4 artist">
+            <img src="images/artists/tyga.jpg" alt="Tyga"/>
+              <div class="media-container">
+                <h1><a href="http://www.lastkings.co/" target="_blank">Tyga</a></h1>
+                <p><a class="music" href="#releases">Music</a></p>
+                <p><a class="videos" href="pages/videos.html">Videos</a></p>
+              </div>
+          </div>
+          <div class="col-4 artist">
+            <img src="images/artists/major-lazer.jpg" alt="Major Lazer"/>
+              <div class="media-container">
+                <h1><a href="http://majorlazer.tumblr.com/" target="_blank">Major Lazer</a></h1>
+                <p><a class="music" href="#releases">Music</a></p>
+                <p><a class="videos" href="pages/videos.html">Videos</a></p>
+              </div>
+          </div>
+          <div class="col-4 artist">
+            <img src="images/artists/kid-ink.jpg" alt="Kid Ink"/>
+              <div class="media-container">
+                <h1><a href="http://kidinkmusic.com/home/" target="_blank">Kid Ink</a></h1>
+                <p><a class="music" href="#releases">Music</a></p>
+                <p><a class="videos" href="pages/videos.html">Videos</a></p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Releases -->
+    <section id="releases">
+      <div class="grid-container">
+        <p class="section-name">Releases</p>
+        <div class="row main-row">
+          <div class="col-12 text-box">
+            <p class="content">
+              Ut id porttitor justo. Quisque a lorem justo. In sollicitudin erat vitae aliquam consectetur. Phasellus maximus aliquet eros quis vestibulum.
+              Nam feugiat tortor a dolor dapibus, et mollis arcu posuere. Ut metus neque, aliquam non hendrerit fringilla, volutpat sit amet dui.
+              Nullam consequat ipsum nulla, et aliquam nisl consequat quis. Mauris in efficitur ante. Proin hendrerit ante nec neque gravida feugiat.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 release">
+            <h6>Wiz Khalifa</h6>
+            <p>Khalifa</p>
+              <div class="album-container">
+                <img src="images/releases/khalifa_album.jpg" alt="Khalifa album" />
+                <p class="more-info"><a href="pages/albums/khalifa_album.html">More information</a></p>
+              </div>
+          </div>
+          <div class="col-4 release">
+              <h6>Jack Ü</h6>
+              <p>Skrillex and Diplo Present Jack Ü</p>
+            <div class="album-container">
+              <img src="images/releases/jack-u_album.jpg" alt="Skrillex and Diplo Present Jack Ü album"/>
+              <p class="more-info"><a href="pages/albums/jack-u_album.html">More information</a></p>
+            </div>
+          </div>
+          <div class="col-4 release">
+            <h6>The 1975</h6>
+            <p>ILIWYSFYASBYSUOI</p>
+            <div class="album-container">
+              <img src="images/releases/iliwysfyasbysuoi_album.jpg" alt="ILIWYSFYASBYSUOI album"/>
+              <p class="more-info"><a href="pages/albums/the-1975_album.html">More information</a></p>
+            </div>
+          </div>
+          <div class="col-4 release">
+            <h6>Years &amp; Years</h6>
+            <p>Communion</p>
+            <div class="album-container">
+              <img src="images/releases/communion_album.jpg" alt="Communion"/>
+              <p class="more-info"><a href="pages/albums/years-and-years_album.html">More information</a></p>
+            </div>
+          </div>
+          <div class="col-4 release">
+            <h6>Coldplay</h6>
+            <p>A Head Full Of Dreams</p>
+            <div class="album-container">
+              <img src="images/releases/a-head-full-of-dreams_album.jpg" alt="A Head Full Of Dreams album"/>
+              <p class="more-info"><a href="pages/albums/coldplay_album.html">More information</a></p>
+            </div>
+          </div>
+          <div class="col-4 release">
+            <h6>The Weeknd</h6>
+            <p>Beauty Behind The Madness</p>
+            <div class="album-container">
+              <img src="images/releases/beauty-behind-the-madness_album.jpg" alt="Beauty Behind The Madness" />
+              <p class="more-info"><a href="pages/albums/the-weeknd_album.html">More information</a></p>
+            </div>
+          </div>
+          <div class="col-4 release">
+            <h6>Tyga</h6>
+            <p>Hotel California</p>
+            <div class="album-container">
+              <img src="images/releases/hotel-california_album.jpg" alt="Hotel California"/>
+              <p class="more-info"><a href="pages/albums/tyga_album.html">More information</a></p>
+            </div>
+          </div>
+          <div class="col-4 release">
+            <h6>Major Lazer</h6>
+            <p>Peace Is The Mission</p>
+            <div class="album-container">
+              <img src="images/releases/peace-is-the-mission_album.jpg" alt="Peace Is The Mission" />
+              <p class="more-info"><a href="pages/albums/major-lazer_album.html">More information</a></p>
+            </div>
+          </div>
+          <div class="col-4 release">
+            <h6>Kid Ink</h6>
+            <p>Full Speed</p>
+            <div class="album-container">
+              <img src="images/releases/full-speed_album.jpg" alt="Full Speed"/>
+              <p class="more-info"><a href="pages/albums/kid-ink_album.html">More information</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section News -->
+      <section id="videos">
+        <div class="grid-container">
+          <p class="section-name">Videos</p>
+          <div class="row main-row">
+            <div class="col-12 text-box">
+              <p class="content">
+                Vestibulum ac elit fringilla metus ullamcorper finibus vel sit amet massa. In finibus ultricies nisi, eget tincidunt nisi tristique at.
+                Donec dui diam, ullamcorper id placerat vitae, mollis sed lectus. Nulla facilisi. Donec scelerisque, augue et egestas suscipit, enim arcu interdum lectus, sit amet dignissim arcu nulla et metus.
+                Phasellus tincidunt, lacus a hendrerit cursus, libero mi luctus justo, non faucibus nisi ligula eget lectus. Maecenas consectetur leo at erat fermentum, eget dignissim velit feugiat.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 gifs">
+              <img src="videos/wiz-khalifa/wiz-khalifa_1.gif"/>
+            </div>
+            <div class="col-4 gifs">
+              <img src="videos/jack-u/jack-u_2.gif"/>
+            </div>
+            <div class="col-4 gifs">
+              <img src="videos/the-1975/the-1975_1.gif"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 gifs">
+              <img src="videos/years-and-years/years-and-years_1.gif"/>
+            </div>
+            <div class="col-4 gifs">
+              <img src="videos/coldplay/coldplay_2.gif"/>
+            </div>
+            <div class="col-4 gifs">
+              <img src="videos/the-weeknd/the-weeknd_2.gif"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4 gifs">
+              <img src="videos/tyga/tyga_2.gif"/>
+            </div>
+            <div class="col-4 gifs">
+              <img src="videos/major-lazer/major-lazer_2.gif"/>
+            </div>
+            <div class="col-4 gifs">
+              <img src="videos/kid-ink/kid-ink_2.gif"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 see-all">
+              <a href="pages/videos.html"><div>See all</div></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-4 footer-contact">
+          <h2>PHJ Records</h2>
+          <p>StreetName, 00-789 CityName, Poland</p>
+          <p>tel. (12) 345 67 89</p>
+          <p>mob. 123 456 789</p>
+          <i class="icon-mail"></i>
+          <a href="mailto:pawel.ho.janecki@gmail.com"><span class="email">pawel.ho.janecki@gmail.com</span></a>
+        </div>
+        <div class="col-4 footer-contact">
+          <a href="index.html"><img src="images/logo.png" alt="PHJ Records logo"/></a>
+        </div>
+        <div class="col-4 footer-contact">
+          <a href="https://www.linkedin.com/profile/preview?locale=pl_PL&trk=prof-0-sb-preview-primary-button" target="_blank"><i class="icon-linkedin-squared"></i></a>
+          <a href="https://www.facebook.com/phojanecki" target="_blank"><i class="icon-facebook-squared"></i></a>
+          <a href="https://plus.google.com/" target="_blank"><i class="icon-gplus-squared"></i></a>
+          <a href="https://www.youtube.com/" target="_blank"><i class="icon-youtube-squared"></i></a>
+          <a href="https://www.twitter.com/" target="_blank"><i class="icon-twitter-squared"></i></a>
+          <a href="https://www.spotify.com/" target="_blank"><i class="icon-spotify"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+
+</html>
