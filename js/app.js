@@ -40,6 +40,14 @@ $('.music').on('click', function(event){
   }, 1000);
 });
 
+// Purchase confirmation - notification on-screen
+ $('.item_add').on('click', function() {
+   $('body').fadeTo(1000, 0.6).delay(500);
+   $('#purchase-confirmation').fadeIn(1000).delay(500);
+   $('#purchase-confirmation').fadeOut(1000);
+   $('body').fadeTo(1000, 1);
+ });
+
 // Submit form (does not work yet)
 function validateForm() {
   var $form = $('#delivery-form');
