@@ -40,8 +40,6 @@ $('.music').on('click', function(event){
   }, 1000);
 });
 
-<<<<<<< HEAD
-=======
 // Purchase confirmation - notification on-screen
  $('.item_add').on('click', function() {
    $('body').fadeTo(1000, 0.6).delay(500);
@@ -50,7 +48,6 @@ $('.music').on('click', function(event){
    $('body').fadeTo(1000, 1);
  });
 
->>>>>>> gh-pages
 // Submit form (does not work yet)
 function validateForm() {
   var $form = $('#delivery-form');

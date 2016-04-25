@@ -1,9 +1,12 @@
 #PHJ Records - workshop website
+Demo: http://phojanecki.github.io/PHJ-Records_workshop_website/
 
 This is a website of the fake record label PHJ Records.
 It was created for non commercial purposes in order to practice HTML, CSS, Sass, JavaScript and jQuery skills.
 All images included in this project were modified in Photoshop CC 2015
 Your feedback (both positive and negative) will be very welcome :)
+
+Website has responsive navigation menu. It changes at width 820px and 480px.
 
 Images used within that project were downloaded from:
 * http://agenciacn.com/variedades/coldplay-es-la-banda-mas-galardonada-del-reino-unido/
